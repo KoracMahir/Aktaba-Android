@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.mezet.actaandroid.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/testirajBesplatnoFragment"
+        android:name="com.mezet.actaandroid.TestirajBesplatnoFragment"
+        android:label="fragment_testiraj_besplatno"
+        tools:layout="@layout/fragment_testiraj_besplatno" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.mezet.actaandroid.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/forgerPasswordFragment"
+        android:name="com.mezet.actaandroid.ForgerPasswordFragment"
+        android:label="fragment_forger_password"
+        tools:layout="@layout/fragment_forger_password" />
+    <fragment
+        android:id="@+id/kursnaListaFragment"
+        android:name="com.mezet.actaandroid.KursnaListaFragment"
+        android:label="fragment_kursna_lista"
+        tools:layout="@layout/fragment_kursna_lista" />
+</navigation>
