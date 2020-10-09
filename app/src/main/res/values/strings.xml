@@ -3,4 +3,26 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="prijavite_s">Prijavite se za 7-dnevno BESPLATNO korištenje i uvjerite se u prednosti koje Vam pružamo.</string>
+    <string name="text_nologon">Morate biti logovani za dalju pretragu!</string>
+    <string name="back_button">Back Button</string>
+    <string name="desc_no_conn">Nema interneta</string>
+    <string name="niste_konektovani">Niste konektovani!</string>
+    <string name="provjerite_vezu">Molimo provjerite vezu sa internetom.</string>
+    <string name="todo">TODO</string>
+    <string name="no_data_news_desk">Nema vijesti</string>
+    <string name="no_data">Nema podataka!</string>
+    <string name="no_data_text">Nema podataka</string>
+    <string name="no_sticky_news">Trenutno niste izdvojili niti jedan članak.</string>
+    <string name="see_neews_at">Članke možete pogledati na</string>
+    <string name="vijesti_button">VIJESTI</string>
+    <string name="no_sticky_tender">Trenutno niste izdvojili niti jedan tender.</string>
+    <string name="see_tender_at">Tendere možete pogledati na</string>
+    <string name="tenderi">TENDERI</string>
+    <string name="no_sticky_promo">Trenutno niste izdvojili niti jedan promo članak</string>
+    <string name="pogledajte">Pogledajte</string>
+    <string name="promo">PROMO</string>
+    <string name="oops">OOOOPS!</string>
+    <string name="no_sticky_oops">Vaš paket ne podržava prikaz traženih informacija.</string>
+    <string name="pogledaj_paket">Pogledajte pakete.</string>
+    <string name="no_sticky_working">Radi se! \n  Hvala na strpljenju.</string>
 </resources>
