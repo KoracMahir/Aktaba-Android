@@ -3,21 +3,36 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="prijavite_s">Prijavite se za 7-dnevno BESPLATNO korištenje i uvjerite se u prednosti koje Vam pružamo.</string>
-    <string name="about_me">Akta.ba je vodeći poslovni portal u Bosni i Hercegovini koji pruža informacije o aktuelnim privrednim i ekonomskim dešavanjima u regionu jugoistočne Evrope. Osim pregleda najnovijih vijesti i izvještaja iz zemlje i regiona, akta.ba obezbjeđuje i ekonomske analize, izvještaje sa berze, najave novih investicija, pregled najnovijih tendera i pobjednika tendera.
-        Poslovni portal akta.ba obezbjeđuje najveći i najažurniji Registar kompanija i institucija sa preko 300.000 pravnih subjekata koji pored osnovnih podataka, nudi i informacije o finansijskim pokazateljima za kompanije iz BiH.
-        Od osnivanja 2005. godine pa do 01.07.2015. portal je poslovao pod nazivom eKapija.ba i u tom periodu postao je neprikosnoveni informacioni motor modernog poslovanja na području Bosne i Hercegovine, ali i šireg regiona jugoistočne Evrope. Nakon dugogodišnjeg nizanja uspjeha eKapija.ba se odlučila na novo poslovno poglavlje koje sa sobom donijelo i novo ime - Akta.ba.
-        Koncipiran kao B2B (business to business) daje šansu za razmjenu informacija ključnim kompanijama na tržištu, koji zahvaljujući portalu Akta.ba mogu postati i Vaši poslovni partneri.
-        Sistem Akta.ba predstavlja veliku pomoć za male i srednje firme, koje nemaju veliki budžet i izdvojena odjeljenja za praćenje ekonomskih kretanja i događaja u regionu i industriji u kojoj su aktivni.
-        Informacije su dostupne korisnicima putem sajta www.akta.ba kao i putem elektronskih newsletter-a stižu na e-mail adresu.
-        Akta - Vijesti svakog radnog dana stiže na Vašu e-mail adresu na B/H/S jezicima. Newsletter sadrži vijesti, najave događaja, seminare, edukacije, investicije i aktuelna dešavanja na polju businessa u BiH i šire.
-        Akta - Tenderi sadrže usko-profilisane informacije iz oblasti poslovanja Vaše firme: javne nabavke, javni pozivi - konkursi, tenderi, stečajevi, likvidacije, privatizacija, regulacioni planovi, planovi nabavke, EU i Međunarodni tenderi, skupštine, licitacije, prodaja i potraživanja sa tržišta Bosne i Hercegovine i regiona koji se dostavlja na dnevnoj osnovi.
-        Akta - Dodjele ugovora sadrže informacije o pobjednicima tendera/javnih nabavki u Bosni i Hercegovini i dostavlja se na dnevnoj osnovi.
-        Akta - Promo u kojoj naši komercijalni korisnici Promo, Primarnog i Premium paketa imaju mogućnost oglašavanja svojih ponuda i akcija. Budući da je portal Akta.ba koncipiran kao B2B servis koji predstavlja efikasnu platformu za razmjenu informacija među privrednim subjektima, tako da je primarni cilj Akta - Promo oglasnika povezivanje naših klijenata. Akta - Promo distribuira se jednom sedmično.
-        Uz visoku čitanost o projektima domaće privrede Akta.ba pomiče granice ka poboljšanju društva u kojem djeluje. Brojke i brojne pohvale dokazuju nam da su čitatelji i klijenti prepoznali da je cjelokupan sadržaj portala od velike vrijednosti za njih.
-        Informacije na portalu prilagođene su perspektivi korisnika Vaših usluga, čime se otvara mogućnost da budete na veoma lak i jednostavan način primjećeni i kontaktirani putem internet pretraživača.
-        Sa novim redizajnom Poslovni portal Akta.ba korisnicima je dodatno obogatio sadržaj, poboljšao korisničke aplikacije i ušao u korak sa trendovima. Cijeli sistem prilagođen je svjetskim standardima, pretrazi prema CPV (common procurement vocabulary) kodovima javnih nabavki u Evropskoj Uniji i korisničkom interfejsu.
-        EuroKapija je osnovana 2005. godine prvo kao samostalna djelatnost, kada je internet poslovanje u regionu još bilo u povoju. Nakon širenja poslovanja na region, 2006. osniva se društvo sa ograničenom odgovornošću, sa 100% domaćim bh. kapitalom.</string>
 
-    <string name="some_text">Font color is <font fgcolor="#ffff0000">red</font></string>
+    <string name="text_nologon">Morate biti logovani za dalju pretragu!</string>
+    <string name="back_button">Back Button</string>
+    <string name="desc_no_conn">Nema interneta</string>
+    <string name="niste_konektovani">Niste konektovani!</string>
+    <string name="provjerite_vezu">Molimo provjerite vezu sa internetom.</string>
+    <string name="todo">TODO</string>
+    <string name="no_data_news_desk">Nema vijesti</string>
+    <string name="no_data">Nema podataka!</string>
+    <string name="no_data_text">Nema podataka</string>
+    <string name="no_sticky_news">Trenutno niste izdvojili niti jedan članak.</string>
+    <string name="see_neews_at">Članke možete pogledati na</string>
+    <string name="vijesti_button">VIJESTI</string>
+    <string name="no_sticky_tender">Trenutno niste izdvojili niti jedan tender.</string>
+    <string name="see_tender_at">Tendere možete pogledati na</string>
+    <string name="tenderi">TENDERI</string>
+    <string name="no_sticky_promo">Trenutno niste izdvojili niti jedan promo članak</string>
+    <string name="pogledajte">Pogledajte</string>
+    <string name="promo">PROMO</string>
+    <string name="oops">OOOOPS!</string>
+    <string name="no_sticky_oops">Vaš paket ne podržava prikaz traženih informacija.</string>
+    <string name="pogledaj_paket">Pogledajte pakete.</string>
+    <string name="no_sticky_working">Radi se! \n  Hvala na strpljenju.</string>
+    <string name="moj_profil">Moj profil</string>
+    <string name="ikona">ikona</string>
+    <string name="damir_mezet">Damir Mezet</string>
+    <string name="damir_mezet_com">damir@mezet.com</string>
+    <string name="vlasnik">Vlasnik</string>
+    <string name="broj_telefona">+ 387 61 838 422</string>
+    <string name="pretplata">PRETPLATA</string>
+    <string name="aktivni_paket">Aktivni paket</string>
 
 </resources>

@@ -55,4 +55,5 @@
         android:name="com.mezet.actaandroid.RegistracijaPromoFragment"
         android:label="fragment_registracija_promo"
         tools:layout="@layout/fragment_registracija_promo" />
+
 </navigation>
