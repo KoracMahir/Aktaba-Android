@@ -30,44 +30,30 @@
         android:name="com.mezet.actaandroid.KursnaListaFragment"
         android:label="fragment_kursna_lista"
         tools:layout="@layout/fragment_kursna_lista" />
-    <activity
-        android:id="@+id/needLoginFragment"
-        android:name="com.mezet.actaandroid.NeedLoginFragment"
-        android:label="fragment_needlogin"
-        tools:layout="@layout/fragment_needlogin" />
-    <activity
-        android:id="@+id/noConnectionFragment"
-        android:name="com.mezet.actaandroid.NoConnectionFragment"
-        android:label="fragment_no_connection"
-        tools:layout="@layout/fragment_no_connection" />
-    <activity
-        android:id="@+id/nemaVijestiFragment"
-        android:name="com.mezet.actaandroid.NemaVijestiFragment"
-        android:label="fragment_nema_vijesti"
-        tools:layout="@layout/fragment_nema_vijesti" />
-    <activity
-        android:id="@+id/nemaTenderaFragment"
-        android:name="com.mezet.actaandroid.NemaTenderaFragment"
-        android:label="fragment_nema_tendera"
-        tools:layout="@layout/fragment_nema_tendera" />
-    <activity
-        android:id="@+id/nemaPromoFragment"
-        android:name="com.mezet.actaandroid.NemaPromoFragment"
-        android:label="fragment_nema_promo"
-        tools:layout="@layout/fragment_nema_promo" />
-    <activity
-        android:id="@+id/nemaPodatakaFragment"
-        android:name="com.mezet.actaandroid.NemaPodatakaFragment"
-        android:label="fragment_nema_podataka"
-        tools:layout="@layout/fragment_nema_podataka" />
-    <activity
-        android:id="@+id/oopsPaketFragment"
-        android:name="com.mezet.actaandroid.OopsPaketFragment"
-        android:label="fragment_oops_paket"
-        tools:layout="@layout/fragment_oops_paket" />
-    <activity
-        android:id="@+id/odrzavanjeFragment"
-        android:name="com.mezet.actaandroid.OdrzavanjeFragment"
-        android:label="fragment_odrzavanje"
-        tools:layout="@layout/fragment_odrzavanje" />
+    <fragment
+        android:id="@+id/registracijaTenderFragment"
+        android:name="com.mezet.actaandroid.RegistracijaTenderFragment"
+        android:label="fragment_registracija_tender"
+        tools:layout="@layout/fragment_registracija_tender" />
+    <fragment
+        android:id="@+id/registracijaRegistarFragment"
+        android:name="com.mezet.actaandroid.RegistracijaRegistarFragment"
+        android:label="fragment_registracija_registar"
+        tools:layout="@layout/fragment_registracija_registar" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.mezet.actaandroid.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/registracijaRegistarPlusFragment2"
+        android:name="com.mezet.actaandroid.RegistracijaRegistarPlusFragment"
+        android:label="fragment_registracija_registar_plus"
+        tools:layout="@layout/fragment_registracija_registar_plus" />
+    <fragment
+        android:id="@+id/registracijaPromoFragment2"
+        android:name="com.mezet.actaandroid.RegistracijaPromoFragment"
+        android:label="fragment_registracija_promo"
+        tools:layout="@layout/fragment_registracija_promo" />
+
 </navigation>
