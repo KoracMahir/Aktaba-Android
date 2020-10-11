@@ -30,4 +30,29 @@
         android:name="com.mezet.actaandroid.KursnaListaFragment"
         android:label="fragment_kursna_lista"
         tools:layout="@layout/fragment_kursna_lista" />
+    <fragment
+        android:id="@+id/registracijaTenderFragment"
+        android:name="com.mezet.actaandroid.RegistracijaTenderFragment"
+        android:label="fragment_registracija_tender"
+        tools:layout="@layout/fragment_registracija_tender" />
+    <fragment
+        android:id="@+id/registracijaRegistarFragment"
+        android:name="com.mezet.actaandroid.RegistracijaRegistarFragment"
+        android:label="fragment_registracija_registar"
+        tools:layout="@layout/fragment_registracija_registar" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.mezet.actaandroid.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/registracijaRegistarPlusFragment2"
+        android:name="com.mezet.actaandroid.RegistracijaRegistarPlusFragment"
+        android:label="fragment_registracija_registar_plus"
+        tools:layout="@layout/fragment_registracija_registar_plus" />
+    <fragment
+        android:id="@+id/registracijaPromoFragment2"
+        android:name="com.mezet.actaandroid.RegistracijaPromoFragment"
+        android:label="fragment_registracija_promo"
+        tools:layout="@layout/fragment_registracija_promo" />
 </navigation>
