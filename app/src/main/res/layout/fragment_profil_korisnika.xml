@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojProfil.ProfilKorisnikaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="@dimen/sesnaest"
+            android:layout_height="@dimen/sesnaest"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="37dp"
+            android:contentDescription="@string/ikona"
+            android:src="@drawable/ic_person_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:layout_marginLeft="16sp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/damir_mezet"
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintStart_toEndOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="@dimen/sesnaest"
+            android:layout_height="@dimen/sesnaest"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ikona"
+            android:src="@drawable/ic_at"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/damir_mezet_com"
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="@dimen/sesnaest"
+            android:layout_height="@dimen/sesnaest"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ikona"
+            android:src="@drawable/ic_firm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/vlasnik"
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ikona"
+            android:src="@drawable/ic_phone_24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="@string/broj_telefona"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/ikona"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:srcCompat="@drawable/ic_line" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/pretplata"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/aktivni_paket"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text=" PREMIUM"
+            android:textColor="@color/akta_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text=" važi do "
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toBottomOf="@+id/textView25"
+            app:layout_constraintStart_toEndOf="@+id/textView25"
+            app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:text="2.03.2020."
+            android:textColor="@color/text"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/open_sans"
+            android:text="VAŠA PRETPLATA ISTIČE ZA                 DANA."
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="2dp"
+            android:text="49"
+            android:textColor="@color/akta_blue"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView29"
+            app:layout_constraintEnd_toEndOf="@+id/textView29"
+            app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/trideset_back"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/akta_blue"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PRODUŽI PRETPLATU"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/ikona"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button11"
+            app:srcCompat="@drawable/ic_line" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/open_sans"
+            android:text="PROMJENA ŠIFRE"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+        <EditText
+            android:id="@+id/oldpass"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Stara šifre"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:backgroundTint="@color/akta_darkblue"
+            android:textColor="#9AA6AC"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_blue"
+            android:textSize="13dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <EditText
+            android:id="@+id/oldpass2"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/akta_darkblue"
+            android:hint="Nova šifra"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#9AA6AC"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_blue"
+            android:textSize="13dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oldpass" />
+
+        <EditText
+            android:id="@+id/oldpass3"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/akta_darkblue"
+            android:hint="Ponovljena nova šifra"
+            android:inputType="textPassword"
+            android:padding="13dp"
+            android:textColor="#9AA6AC"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_blue"
+            android:textSize="13dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oldpass2" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/akta_blue"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="SPREMI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oldpass3" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/ikona"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button12"
+            app:srcCompat="@drawable/ic_line" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/open_sans"
+            android:text="PROMJENA PAKETA USLUGA"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="TENDER PAKET "
+            android:textColor="@color/akta_gold"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:buttonTint="@color/akta_gold"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    300KM + PDV (godišnja pretplata)"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView32" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="REGISTAR PAKET "
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox2" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:buttonTint="@color/akte_darkgreen"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    300KM + PDV (godišnja pretplata)"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PROMO PAKET "
+            android:textColor="@color/akta_pink"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox3" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:buttonTint="@color/akta_pink"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    400KM + PDV (godišnja pretplata)"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox2" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="REGISTAR PLUS PAKET "
+            android:textColor="@color/akta_cyan"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox4" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:buttonTint="@color/akta_cyan"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    450KM + PDV (godišnja pretplata)"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox3" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PRIMARNI PAKET "
+            android:textColor="@color/akta_grey"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox5" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="false"
+            android:buttonTint="@color/akta_grey"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    600KM + PDV (godišnja pretplata)"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox4" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PREMIUM PAKET "
+            android:textColor="@color/akta_darkblue"
+            app:layout_constraintLeft_toLeftOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@id/checkBox6" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:checked="true"
+            android:buttonTint="@color/akta_darkblue"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="\n    960KM + PDV (godišnja pretplata)"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox5" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/akta_blue"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PROMIJENI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox6" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/akta_blue"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="ODJAVI SE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

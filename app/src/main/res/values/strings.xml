@@ -25,4 +25,12 @@
     <string name="no_sticky_oops">Vaš paket ne podržava prikaz traženih informacija.</string>
     <string name="pogledaj_paket">Pogledajte pakete.</string>
     <string name="no_sticky_working">Radi se! \n  Hvala na strpljenju.</string>
+    <string name="moj_profil">Moj profil</string>
+    <string name="ikona">ikona</string>
+    <string name="damir_mezet">Damir Mezet</string>
+    <string name="damir_mezet_com">damir@mezet.com</string>
+    <string name="vlasnik">Vlasnik</string>
+    <string name="broj_telefona">+ 387 61 838 422</string>
+    <string name="pretplata">PRETPLATA</string>
+    <string name="aktivni_paket">Aktivni paket</string>
 </resources>

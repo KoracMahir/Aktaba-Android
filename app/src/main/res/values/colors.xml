@@ -6,4 +6,11 @@
 
     <color name="white">#FFFFFF</color>
     <color name="text">#000000</color>
+    <color name="akta_blue">#5294E2</color>
+    <color name="akta_gold">#C88C00</color>
+    <color name="akte_darkgreen">#007F6A</color>
+    <color name="akta_pink">#9069AE</color>
+    <color name="akta_cyan">#00B496</color>
+    <color name="akta_grey">#9AA6AC</color>
+    <color name="akta_darkblue">#5294E2</color>
 </resources>

@@ -11,5 +11,8 @@
     <dimen name="pet">5sp</dimen>
     <dimen name="button_height">40sp</dimen>
     <dimen name="button_width">300sp</dimen>
+    <dimen name="moj_profil_left">28sp</dimen>
+    <dimen name="sesnaest">16sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
     <item name="text_13sp" type="dimen" format="float">13.5sp</item>
 </resources>
