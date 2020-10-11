@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TenderiFragment">
+
+
+    <Button
+        android:id="@+id/search_tender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/orange"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRETRAGA TENDERA"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/search_tender"
+        app:layout_constraintBottom_toBottomOf="@id/search_tender"
+        app:layout_constraintLeft_toLeftOf="@id/search_tender"
+        app:layout_constraintRight_toRightOf="@id/search_tender"
+        android:elevation="3dp"
+        android:textStyle="bold"
+        android:id="@+id/text1"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/search_tender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Najnoviji"
+                    android:id="@+id/najnoviji"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/text"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="31dp"/>
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintLeft_toRightOf="@id/najnoviji"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="7.6dp"/>
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    app:layout_constraintTop_toBottomOf="@id/najnoviji"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/tenderi_item"
+                    tools:itemCount="4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Najčitaniji"
+                    android:id="@+id/najcitaniji"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/text"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="31dp"/>
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintLeft_toRightOf="@id/najcitaniji"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="7.6dp"/>
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    app:layout_constraintTop_toBottomOf="@id/najcitaniji"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/tenderi_item"
+                    tools:itemCount="4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sa najvećom vrijednošću"
+                    android:id="@+id/sanajvecomvrijednoscu"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/text"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="31dp"/>
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintLeft_toRightOf="@id/sanajvecomvrijednoscu"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="7.6dp"/>
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    app:layout_constraintTop_toBottomOf="@id/sanajvecomvrijednoscu"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/tenderi_item"
+                    tools:itemCount="4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="500dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sa kratkim rokom"
+                    android:id="@+id/sakratkimrokom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/text"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="31dp"/>
+
+                <ImageView
+                    android:layout_width="7.4dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintLeft_toRightOf="@id/sakratkimrokom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginLeft="7.6dp"/>
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    app:layout_constraintTop_toBottomOf="@id/sakratkimrokom"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/tenderi_item"
+                    tools:itemCount="4"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
