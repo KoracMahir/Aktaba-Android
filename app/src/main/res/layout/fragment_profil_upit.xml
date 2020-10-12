@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".mojProfil.ProfilUpitFragment">
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="180sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/akta_darkblue"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Upit"
+        android:inputType="textMultiLine"
+        android:paddingStart="20sp"
+        android:paddingLeft="20sp"
+        android:paddingTop="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/akta_blue"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="POŠALJI UPIT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sesnaest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/open_sans"
+        android:text='Vaš kompanijski profil i profil klijenta možete uređivati shodno Vašim željama i potrebama, odnosno kadrovskim i registracijskim promjenama.  \n\nSve promjene vezane za "Podatke o kompaniji" možete poslati putem Komentara. Dovoljno je da upišete sve promjene koje želite da se naprave i da pošaljete pritiskom na dugmić "pošalji".  \n\nPromjene će biti vidljive po odobrenju od strane administratora.  \n\nSve komentare, pohvale i pritužbe možete slati putem opcije "Pošalji upit", te ćete u najkraćem mogućem periodu dobiti odgovor.'
+        android:textSize="@dimen/text_13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button19" />
+</androidx.constraintlayout.widget.ConstraintLayout>
