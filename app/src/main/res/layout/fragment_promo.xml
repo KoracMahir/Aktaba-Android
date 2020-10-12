@@ -1,14 +1,370 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="50dp"
     tools:context=".PromoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@drawable/pink"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/preporuceno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Preporučujemo"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/preporuceno_bar"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="136dp"
+            app:layout_constraintTop_toBottomOf="@id/preporuceno"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="30dp">
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="136dp"
+                android:src="@drawable/image_example"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/image1"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="@id/image1"
+                app:layout_constraintBottom_toBottomOf="@id/image1"
+                app:layout_constraintLeft_toLeftOf="@id/image1"
+                app:layout_constraintRight_toRightOf="@id/image1"
+                android:background="@drawable/ic_gray_transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text1text1text1text1text1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans"
+                app:layout_constraintBottom_toBottomOf="@id/image1"
+                app:layout_constraintLeft_toLeftOf="@id/image1"
+                app:layout_constraintRight_toRightOf="@id/image1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="182dp"
+                android:layout_height="136dp"
+                android:src="@drawable/image_example"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/image1"
+                android:layout_marginLeft="21dp"
+                android:id="@+id/image2"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="@id/image2"
+                app:layout_constraintBottom_toBottomOf="@id/image2"
+                app:layout_constraintLeft_toLeftOf="@id/image2"
+                app:layout_constraintRight_toRightOf="@id/image2"
+                android:background="@drawable/ic_gray_transparent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text1text1text1text1text1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/open_sans"
+                app:layout_constraintBottom_toBottomOf="@id/image2"
+                app:layout_constraintLeft_toLeftOf="@id/image2"
+                app:layout_constraintRight_toRightOf="@id/image2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:src="@drawable/image_example"
+            app:layout_constraintTop_toBottomOf="@id/preporuceno_bar"
+            android:layout_marginTop="28dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/image_promo"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="The standard Lorem Ipsum passage"
+            android:textColor="@color/text"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_promo" />
+        <TextView
+            android:id="@+id/text_bellow_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
+            android:textColor="@color/text"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/title" />
+
+        <TextView
+            android:id="@+id/newsletter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Newsletter  Akta - Promo"
+            android:textColor="@color/akta_pink"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_bellow_title" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rectangle_29purple"
+            app:layout_constraintTop_toBottomOf="@id/newsletter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/imeiprezime"
+            android:hint="Ime i prezime"
+            android:textSize="12dp"
+            android:paddingLeft="14dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_rectangle_29purple"
+            app:layout_constraintTop_toBottomOf="@id/imeiprezime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/email"
+            android:hint="E-mail adresa"
+            android:textSize="12dp"
+            android:paddingLeft="14dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/pink"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:text="PRIJAVI SE"
+            android:textColor="@color/white"
+            android:id="@+id/prijavise"/>
+        <TextView
+            android:id="@+id/top5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Top 5 vijesti"
+            android:textColor="@color/akta_pink"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/prijavise" />
+        <LinearLayout
+            android:id="@+id/najnovijeornajcitanije"
+            app:layout_constraintTop_toBottomOf="@id/top5"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pink"
+                android:textColor="@color/white"
+                android:text="najnovije"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_purple_gray"
+                android:textColor="@color/white"
+                android:text="NAJČITANIJE"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_vijesti"
+            app:layout_constraintTop_toBottomOf="@id/najnovijeornajcitanije"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_promo_vijesti"
+            tools:itemCount="4"/>
+        <TextView
+            android:id="@+id/pratitenas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Pratite nas"
+            android:textColor="@color/akta_pink"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recycler_vijesti" />
+        <LinearLayout
+            android:id="@+id/igandfb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toBottomOf="@id/pratitenas"
+            android:layout_marginTop="7dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <Button
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pink"
+                    android:id="@+id/fb" />
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/ic_facebook"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <Button
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pink"
+                    android:id="@+id/ig" />
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/ic_instagram"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/twandvb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toBottomOf="@id/igandfb"
+            android:layout_marginTop="15dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <Button
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pink"
+                    android:id="@+id/tw" />
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/ic_twiter"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+                <Button
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pink"
+                    android:id="@+id/vb" />
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/ic_viber"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
