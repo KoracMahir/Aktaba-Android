@@ -14,4 +14,13 @@
     <color name="akta_cyan">#00B496</color>
     <color name="akta_grey">#9AA6AC</color>
     <color name="akta_darkblue">#5294E2</color>
+
+    <color name="home">#374750</color>
+    <color name="vijesti">#5294E2</color>
+    <color name="registar">#00B496</color>
+    <color name="tenderi">#C88C00</color>
+    <color name="promo">#9C5A9A</color>
+    <color name="profile">#9AA6AC</color>
+    <color name="o_akta">#000000</color>
+    <color name="odjavi_se">#CCCCCC</color>
 </resources>
