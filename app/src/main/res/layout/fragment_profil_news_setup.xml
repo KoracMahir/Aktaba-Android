@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojProfil.ProfilNewsSetupFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="NEWSLETTER POSTAVKE"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Želim da primam obavijesti iz slijedećih poslovnih grana:"
+            android:textColor="@color/text"
+            app:layout_constraintEnd_toStartOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView48" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView49"
+            app:tint="@color/akta_blue" />
+
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="true"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Štamparije i izdavaštvo"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView49" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox13"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="true"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="IT i uredska  oprema"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox13" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox14"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="true"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Telekomunikacije"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox14" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox15"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Elektronika"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox15" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox16"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Zaštita okoliša, sanitarne i  komunalne usluge"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox16" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox17"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Ostalo"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox17" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox18"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Sport,kultura i umjetnost"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox18" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox19"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Hemijski proizvodi"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox19" />
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox20"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Zdravstvo"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox20" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox21"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Istraživanje i razvoj"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox21" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox22"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Odbrana, sigurnost i javna uprava"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox22" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox23"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Industrija"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox23" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox24"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Usluge"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox24" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox25"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Poljoprivreda i poljomehanizacija"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox25" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox26"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Namještaj i aparati"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox26" />
+
+        <ImageView
+            android:id="@+id/imageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox27"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Energetika"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox27" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox28"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Transport"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox28" />
+
+        <ImageView
+            android:id="@+id/imageView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox29"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Rudarstvo i metali"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox29" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox30"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Obrazovanje"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox30" />
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox31"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Građevina i nekretnine"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox31" />
+
+        <ImageView
+            android:id="@+id/imageView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox32"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Turizam"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox32" />
+
+        <ImageView
+            android:id="@+id/imageView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox33"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Tekstil i asesoari"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox33" />
+
+        <ImageView
+            android:id="@+id/imageView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox34"
+            app:tint="@color/akta_darkblue" />
+
+        <CheckBox
+            android:id="@+id/checkBox35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:buttonTint="@color/akta_darkblue"
+            android:checked="false"
+            android:clickable="false"
+            android:fontFamily="@font/open_sans"
+            android:text="Finansije i osiguranje"
+            android:textColor="@color/akta_blue"
+            android:textColorHighlight="@color/akta_blue"
+            android:textColorLink="@color/akta_darkblue"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox34" />
+
+        <ImageView
+            android:id="@+id/imageView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/checkBox35"
+            app:tint="@color/akta_darkblue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
