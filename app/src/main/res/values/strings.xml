@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">ActaAndroid</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="prijavite_s">Prijavite se za 7-dnevno BESPLATNO korištenje i uvjerite se u prednosti koje Vam pružamo.</string>
-
     <string name="text_nologon">Morate biti logovani za dalju pretragu!</string>
     <string name="back_button">Back Button</string>
     <string name="desc_no_conn">Nema interneta</string>
