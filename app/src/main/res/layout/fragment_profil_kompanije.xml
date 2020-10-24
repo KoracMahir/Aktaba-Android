@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojProfil.ProfilKompanijeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment6"
+            android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </androidx.fragment.app.FragmentContainerView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView95" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="ODGOVORNO LICE"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment6" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Zaimović Mirsad - Generali direktor "
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView90" />
+
+        <TextView
+            android:id="@+id/textView96"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PRAVNE INFORMACIJE"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="OBLIK SVOJINE"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView96" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Privatna"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toBottomOf="@id/textView96" />
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="ID BROJ"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView97" />
+
+        <TextView
+            android:id="@+id/textView103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="4200211100005"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toBottomOf="@id/textView96"
+            app:layout_constraintTop_toTopOf="@id/textView98" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="PDV BROJ"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView98" />
+
+        <TextView
+            android:id="@+id/textView104"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="200211100005"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toBottomOf="@id/textView96"
+            app:layout_constraintTop_toTopOf="@id/textView99" />
+
+        <TextView
+            android:id="@+id/textView100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="DATUM OSNIVANJA"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView99" />
+
+        <TextView
+            android:id="@+id/textView105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="12.08.2004."
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toBottomOf="@id/textView96"
+            app:layout_constraintTop_toTopOf="@id/textView100" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="BERZANSKI INDEX"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView100" />
+
+        <TextView
+            android:id="@+id/textView106"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="65-02-0012-10"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toBottomOf="@id/textView96"
+            app:layout_constraintTop_toTopOf="@id/textView101" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView106" />
+
+        <TextView
+            android:id="@+id/textView107"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PROSJEČAN BROJ  RADNIKA (2018.god)"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <TextView
+            android:id="@+id/textView108"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="3288"
+            android:textColor="@color/akte_darkgreen"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView107"
+            app:layout_constraintLeft_toRightOf="@id/textView107"
+            app:layout_constraintStart_toStartOf="@+id/textView106"
+            app:layout_constraintTop_toTopOf="@+id/textView107"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView107" />
+
+        <TextView
+            android:id="@+id/textView109"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="UKUPAN PRIOD U 2018. GODINI"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view4" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="500.435.978,00KM"
+            android:textColor="@color/akte_darkgreen"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView109" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView110" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="BANKOVNI RAČUN"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view5" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="AKTIVNI"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView111" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:fontFamily="@font/open_sans"
+            android:text="79"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView112" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans"
+            android:text="0"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView115" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="BLOKIRANI"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView112" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView115" />
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="DJELATNOST"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view6" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="60.10"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView116" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Emitiranje radijskoj programa"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView117" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Djelatnost žičane telekomunikacije"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView120" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="61.10"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView117" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Djelatnost finansijskih holding- društava"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView122" />
+
+        <TextView
+            android:id="@+id/textView122"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="64.20"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView120" />
+
+        <TextView
+            android:id="@+id/textView123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Djelatnost javnih pošta"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView124" />
+
+        <TextView
+            android:id="@+id/textView124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="64.110"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView122" />
+
+        <TextView
+            android:id="@+id/textView125"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="64.200"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView124" />
+
+        <TextView
+            android:id="@+id/textView126"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Telekomunikacije"
+            android:textColor="@color/akte_darkgreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/textView97"
+            app:layout_constraintTop_toTopOf="@id/textView125" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

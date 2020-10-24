@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/profilKompanijeFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -110,5 +110,10 @@
         android:name="com.mezet.actaandroid.mojProfil.ProfilKorisnikaFragment"
         android:label="fragment_profil_korisnika"
         tools:layout="@layout/fragment_profil_korisnika" />
+    <fragment
+        android:id="@+id/profilKompanijeFragment"
+        android:name="com.mezet.actaandroid.mojProfil.ProfilKompanijeFragment"
+        android:label="fragment_profil_kompanije"
+        tools:layout="@layout/fragment_profil_kompanije" />
 
 </navigation>
