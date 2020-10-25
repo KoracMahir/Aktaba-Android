@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="226dp"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="205dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_example"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/image_vijesti"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_gray_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/image_vijesti"
+        app:layout_constraintLeft_toLeftOf="@id/image_vijesti"
+        app:layout_constraintRight_toRightOf="@id/image_vijesti"
+        app:layout_constraintTop_toTopOf="@id/image_vijesti"
+
+        />
+
+    <TextView
+        android:id="@+id/text_vijesti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/open_sans"
+        android:text="text1text1text1text1text1text1text1text1text1text1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/image_vijesti"
+        app:layout_constraintLeft_toLeftOf="@id/image_vijesti"
+        app:layout_constraintRight_toRightOf="@id/image_vijesti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

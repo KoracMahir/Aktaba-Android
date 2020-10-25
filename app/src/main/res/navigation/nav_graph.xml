@@ -3,112 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/home2">
+
 
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.mezet.actaandroid.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
-    <fragment
-        android:id="@+id/testirajBesplatnoFragment"
-        android:name="com.mezet.actaandroid.TestirajBesplatnoFragment"
-        android:label="fragment_testiraj_besplatno"
-        tools:layout="@layout/fragment_testiraj_besplatno" />
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.mezet.actaandroid.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-    <fragment
-        android:id="@+id/forgerPasswordFragment"
-        android:name="com.mezet.actaandroid.ForgerPasswordFragment"
-        android:label="fragment_forger_password"
-        tools:layout="@layout/fragment_forger_password" />
-    <fragment
-        android:id="@+id/kursnaListaFragment"
-        android:name="com.mezet.actaandroid.KursnaListaFragment"
-        android:label="fragment_kursna_lista"
-        tools:layout="@layout/fragment_kursna_lista" />
-    <fragment
-        android:id="@+id/registracijaTenderFragment"
-        android:name="com.mezet.actaandroid.RegistracijaTenderFragment"
-        android:label="fragment_registracija_tender"
-        tools:layout="@layout/fragment_registracija_tender" />
-    <fragment
-        android:id="@+id/registracijaRegistarFragment"
-        android:name="com.mezet.actaandroid.RegistracijaRegistarFragment"
-        android:label="fragment_registracija_registar"
-        tools:layout="@layout/fragment_registracija_registar" />
-    <fragment
-        android:id="@+id/aboutUsFragment"
-        android:name="com.mezet.actaandroid.AboutUsFragment"
-        android:label="fragment_about_us"
-        tools:layout="@layout/fragment_about_us" />
-    <fragment
-        android:id="@+id/registracijaRegistarPlusFragment2"
-        android:name="com.mezet.actaandroid.RegistracijaRegistarPlusFragment"
-        android:label="fragment_registracija_registar_plus"
-        tools:layout="@layout/fragment_registracija_registar_plus" />
-    <fragment
-        android:id="@+id/registracijaPromoFragment2"
-        android:name="com.mezet.actaandroid.RegistracijaPromoFragment"
-        android:label="fragment_registracija_promo"
-        tools:layout="@layout/fragment_registracija_promo" />
-    <fragment
-        android:id="@+id/oopsPaketFragment"
-        android:name="com.mezet.actaandroid.OopsPaketFragment"
-        android:label="fragment_oops_paket"
-        tools:layout="@layout/fragment_oops_paket" />
-    <fragment
-        android:id="@+id/odrzavanjeFragment"
-        android:name="com.mezet.actaandroid.OdrzavanjeFragment"
-        android:label="fragment_odrzavanje"
-        tools:layout="@layout/fragment_odrzavanje" />
-    <fragment
-        android:id="@+id/noConnectionFragment"
-        android:name="com.mezet.actaandroid.NoConnectionFragment"
-        android:label="fragment_no_connection"
-        tools:layout="@layout/fragment_no_connection" />
-    <fragment
-        android:id="@+id/nemaVijestiFragment"
-        android:name="com.mezet.actaandroid.NemaVijestiFragment"
-        android:label="fragment_nema_vijesti"
-        tools:layout="@layout/fragment_nema_vijesti" />
-    <fragment
-        android:id="@+id/nemaTenderaFragment"
-        android:name="com.mezet.actaandroid.NemaTenderaFragment"
-        android:label="fragment_nema_tendera"
-        tools:layout="@layout/fragment_nema_tendera" />
-    <fragment
-        android:id="@+id/nemaPromoFragment"
-        android:name="com.mezet.actaandroid.NemaPromoFragment"
-        android:label="fragment_nema_promo"
-        tools:layout="@layout/fragment_nema_promo" />
-    <fragment
-        android:id="@+id/nemaPodatakaFragment"
-        android:name="com.mezet.actaandroid.NemaPodatakaFragment"
-        android:label="fragment_nema_podataka"
-        tools:layout="@layout/fragment_nema_podataka" />
-    <fragment
-        android:id="@+id/needLoginFragment"
-        android:name="com.mezet.actaandroid.NeedLoginFragment"
-        android:label="fragment_needlogin"
-        tools:layout="@layout/fragment_needlogin" />
-    <fragment
-        android:id="@+id/tenderiFragment"
-        android:name="com.mezet.actaandroid.TenderiFragment"
-        android:label="fragment_tenderi"
-        tools:layout="@layout/fragment_tenderi" />
-    <fragment
-        android:id="@+id/mojProfilFragment"
-        android:name="com.mezet.actaandroid.MojProfilFragment"
-        android:label="fragment_moj_profil"
-        tools:layout="@layout/fragment_moj_profil" />
-    <fragment
-        android:id="@+id/profilKorisnikaFragment"
-        android:name="com.mezet.actaandroid.mojProfil.ProfilKorisnikaFragment"
-        android:label="fragment_profil_korisnika"
-        tools:layout="@layout/fragment_profil_korisnika" />
-
+        android:id="@+id/home2"
+        android:name="com.mezet.actaandroid.fragments.main.Home"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" />
 </navigation>

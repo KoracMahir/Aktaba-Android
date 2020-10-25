@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".mojProfil.ProfilUpitFragment">
+    tools:context=".fragments.mojProfil.ProfilUpitFragment">
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -59,7 +59,7 @@
         android:layout_marginBottom="32dp"
         android:fontFamily="@font/open_sans"
         android:text='Vaš kompanijski profil i profil klijenta možete uređivati shodno Vašim željama i potrebama, odnosno kadrovskim i registracijskim promjenama.  \n\nSve promjene vezane za "Podatke o kompaniji" možete poslati putem Komentara. Dovoljno je da upišete sve promjene koje želite da se naprave i da pošaljete pritiskom na dugmić "pošalji".  \n\nPromjene će biti vidljive po odobrenju od strane administratora.  \n\nSve komentare, pohvale i pritužbe možete slati putem opcije "Pošalji upit", te ćete u najkraćem mogućem periodu dobiti odgovor.'
-        android:textSize="@dimen/text_13sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

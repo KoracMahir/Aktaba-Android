@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.sections.NewsBlueBlackFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investicije"
+        android:id="@+id/najnoviji"
+        android:fontFamily="@font/open_sans_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/text"
+        android:textSize="20dp"
+        android:layout_marginLeft="31dp"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="7.4dp"
+        android:layout_height="12dp"
+        app:srcCompat="@drawable/ic_arrow_right"
+        app:layout_constraintLeft_toRightOf="@id/najnoviji"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="7.6dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/blue_black_recycler"
+        tools:itemCount="3"
+        tools:listitem="@layout/vijesti_item"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
     app:animation_duration="250"
     app:indicator_size="43dp"
     app:item_layout="@layout/expanding_item"
-    app:separator_layout="@layout/separator_layout"
+    android:layout_marginBottom="8dp"
     app:show_animation="true"
     app:show_indicator="false"
     app:start_collapsed="true"
