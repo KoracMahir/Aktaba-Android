@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mezet.actaandroid.R
@@ -55,5 +56,6 @@ class AllBlackAdapter(val mostRecentNews: MostRecentNews?, val context : Context
         val image_vijesti = itemView.findViewById(R.id.image_vijesti_2) as ImageView
         val text_vijesti = itemView.findViewById(R.id.big_text) as TextView
         val date_text = itemView.findViewById(R.id.date_txt) as TextView
+
     }
 }

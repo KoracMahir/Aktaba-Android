@@ -1,5 +1,6 @@
-package com.mezet.actaandroid.fragments
+package com.mezet.actaandroid.fragments.main.vijesti
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,23 +9,18 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mezet.actaandroid.R
 import com.mezet.actaandroid.adapters.VijestiAdapterOne
-import com.mezet.actaandroid.fragments.main.Home
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import com.mezet.actaandroid.presenters.MostRecentNewsPresenter
 import com.mezet.actaandroid.views.MostRecentNewsView
 import kotlinx.android.synthetic.main.fragment_home2.*
 
-
-class HomeFragment : Fragment(),MostRecentNewsView {
-
+class Najaves : Fragment(), MostRecentNewsView {
 
 
     override fun onCreateView(
@@ -32,8 +28,7 @@ class HomeFragment : Fragment(),MostRecentNewsView {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view : View = inflater.inflate(R.layout.fragment_home, container, false)
-//        val v_host : View = inflater.inflate(R.layout.fragment_home2, container, false)
+        val view : View = inflater.inflate(R.layout.fragment_najaves, container, false)
         MostRecentNewsPresenter(this).getMostRecentFromAPI()
 
         val parent: Fragment? = (parentFragment as NavHostFragment).parentFragment
@@ -61,73 +56,71 @@ class HomeFragment : Fragment(),MostRecentNewsView {
         val analiza_choosed = parent?.view?.findViewById(R.id.analiza_choosed) as ImageView
         val kapital_choosed = parent?.view?.findViewById(R.id.kapital_choosed) as ImageView
 
-        home_choosed.visibility=View.VISIBLE
+        home_choosed.visibility=View.GONE
         vijesti_choosed.visibility=View.GONE
         investicije_choosed.visibility=View.GONE
         kapital_choosed.visibility=View.GONE
         eu_choosed.visibility=View.GONE
-        najave_choosed.visibility=View.GONE
+        najave_choosed.visibility=View.VISIBLE
         licnosti_choosed.visibility=View.GONE
         karijera_choosed.visibility=View.GONE
         pauza_choosed.visibility=View.GONE
         kolumna_choosed.visibility=View.GONE
         analiza_choosed.visibility=View.GONE
-        home.setOnClickListener(View.OnClickListener {
+
+        vijesti.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_najaves_to_vijesti)
         })
 
         eu.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_EU)
+            findNavController().navigate(R.id.action_najaves_to_EU)
         })
         najave.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_najaves)
         })
         licnosti.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_licnosti)
+            findNavController().navigate(R.id.action_najaves_to_licnosti)
         })
         karijera.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_karijera)
+            findNavController().navigate(R.id.action_najaves_to_karijera)
         })
         pauza.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_pauza)
+            findNavController().navigate(R.id.action_najaves_to_pauza)
         })
         kolumna.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_kolumna)
+            findNavController().navigate(R.id.action_najaves_to_kolumna)
         })
         analiza.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_analiza)
+            findNavController().navigate(R.id.action_najaves_to_analiza)
         })
 
         kapital.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_kapital)
+            findNavController().navigate(R.id.action_najaves_to_kapital)
         })
 
-        vijesti.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_vijesti)
+        home.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_najaves_to_homeFragment)
         })
         investicije.setOnClickListener(View.OnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_investicije)
+            findNavController().navigate(R.id.action_najaves_to_investicije)
         })
 
-
-
         return view
-    }
-
-    fun navController(view: View): NavController {
-        val navController = Navigation.findNavController(view)
-        return navController
     }
 
     override fun onMostRecentNews(mostRecentNews: MostRecentNews?) {
         val adapter = context?.let { VijestiAdapterOne(mostRecentNews, it) }
         val recyclerView = view?.findViewById(R.id.najnovije_top) as RecyclerView
-        recyclerView.layoutManager= LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+        recyclerView.layoutManager= LinearLayoutManager(context,
+            LinearLayoutManager.HORIZONTAL,false)
         recyclerView.adapter = adapter
     }
 
     override fun onFailiuer(string: String) {
-        Toast.makeText(context,string,Toast.LENGTH_LONG).show()
+        Toast.makeText(context,string, Toast.LENGTH_LONG).show()
     }
 
+    override fun getContext(): Context? {
+        return super.getContext()
+    }
 
 }
