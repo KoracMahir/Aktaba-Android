@@ -15,4 +15,5 @@
     <color name="akta_grey">#9AA6AC</color>
     <color name="akta_darkblue">#5294E2</color>
     <color name="border_grey">#DADADA</color>
+    <color name="akta_red">#ff0000</color>
 </resources>

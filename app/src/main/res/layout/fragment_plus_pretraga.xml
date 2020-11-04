@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojRegistar.registarPretraga.PlusPretragaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView171"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="FINANSIJSKA GODINA"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextTextPersonName28"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:drawableEnd="@drawable/ic_arrowdown"
+            android:drawableRight="@drawable/ic_arrowdown"
+            android:drawableTint="@color/akta_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:paddingRight="16dp"
+            android:text="2010-2019"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView171" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName29"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:text="Ukupan prihod"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName28" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName30"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:text="Sveobuhvatna zarada"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName29" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName31"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:text="Broj radnika"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName30" />
+
+        <TextView
+            android:id="@+id/textView172"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="TRANSAKCIJSKI RAČUNI"
+            android:textColor="@color/text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName31" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView172">
+
+            <CheckBox
+                android:id="@+id/checkBox49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/akta_cyan"
+                android:checked="true"
+                android:clickable="false"
+                android:fontFamily="@font/open_sans"
+                android:text="Aktivni računi"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_12sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/akta_cyan"
+
+                android:clickable="false"
+                android:fontFamily="@font/open_sans"
+                android:text="Blokirani računi"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_12sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/akta_cyan"
+
+                android:clickable="false"
+                android:fontFamily="@font/open_sans"
+                android:text="Ugašeni računi"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/akta_cyan"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="OSVJEŽI PRETRAGU"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
