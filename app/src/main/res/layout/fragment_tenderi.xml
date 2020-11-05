@@ -64,7 +64,6 @@
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="7.6dp"/>
 
-                <!-- TODO: Update blank fragment layout -->
                 <androidx.recyclerview.widget.RecyclerView
                     app:layout_constraintTop_toBottomOf="@id/najnoviji"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -99,7 +98,6 @@
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="7.6dp"/>
 
-                <!-- TODO: Update blank fragment layout -->
                 <androidx.recyclerview.widget.RecyclerView
                     app:layout_constraintTop_toBottomOf="@id/najcitaniji"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -134,7 +132,6 @@
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="7.6dp"/>
 
-                <!-- TODO: Update blank fragment layout -->
                 <androidx.recyclerview.widget.RecyclerView
                     app:layout_constraintTop_toBottomOf="@id/sanajvecomvrijednoscu"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -170,7 +167,6 @@
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="7.6dp"/>
 
-                <!-- TODO: Update blank fragment layout -->
                 <androidx.recyclerview.widget.RecyclerView
                     app:layout_constraintTop_toBottomOf="@id/sakratkimrokom"
                     app:layout_constraintLeft_toLeftOf="parent"

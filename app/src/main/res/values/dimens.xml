@@ -14,6 +14,7 @@
     <dimen name="moj_profil_left">28sp</dimen>
     <dimen name="sesnaest">16sp</dimen>
     <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_13sp">13.5sp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -27,4 +28,5 @@
 <!--    <dimen name="fab_margin">16dp</dimen>-->
 <!--    <dimen name="text_13sp">13sp</dimen>-->
     <!--    <item name="text_13sp" type="dimen" format="float">13.5sp</item>-->
+
 </resources>

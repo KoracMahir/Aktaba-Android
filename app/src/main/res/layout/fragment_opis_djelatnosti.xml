@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojRegistar.OpisDjelatnostiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView166"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="OPIS DJELATNOSTI"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/textView169"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="BH Line - Fiksna telefonija Telekomunikaciona mreža predstavlja kičmu komunikacijskog sistema zemlje. Mrežu danas čini kilometri položenih podzemnih cijevi i optičkih kablova u prijenosnu mrežu koja povezuje telefonske centrale. Pretplatničke centrale imaju instalirani kapacitet od 683.309 direktnih linija. Učešće digitalnih telefonskih centrala u ukupnim kapacitetima iznosi 99,6%, dok je sistem prijenosa u potpunosti digitaliziran.  BH Mobile - Mobilna telefonija BH Telecom d.d. Sarajevo, pruža usluge mobilne mreže već dugi niz godina. Svojim korisnicima omogućava postpaid i prepaid servise, fleksibilne tarifne postpaid modele te brojne pogodnosti koje će Vas neće ostaviti ravnodušnim: uštede preko 50%.  Poslovni i privatni korisnici, provjerite zašto je BH Telecom najpovoljniji mobilni operator u BiH!\n\nBIHnet - Pristup internetu BIHnet predstavlja cjelinu unutar Direkcije za pružanje usluga paketskom mrežom BH Telecoma d.d. Stručno osoblje koje radi na planiranju, implementaciji i održavanju sistema posjeduje respektabilno i dugogodišnje iskustvo u radu čime se korisnicima omogućava pružanje najraznovrsnijih tipova usluga i servisa. Svojim korisnicima čestitamo što su u odabiru svog Internet davaoca usluga prepoznali kvalitet i pouzdanost, a BIHnet će sa svoje strane potruditi da pristupačnim cijenama i kvalitetnim servisom bude na usluzi 24 sata dnevno.\n\nBIHnet - Javna mreža za prenos podataka Javna mreža za prijenos podataka je statistički multipleksirana, široko distribuirana mreža na području koje pokriva BH Telecom. U saradnji sa druga dva operatora u stanju smo izgraditi WAN mrežu na području cijele Bosne i Hercegovine. Korištenjem rezervih linkova na svim glavnim pravcima obezbjeđena je visoka raspoloživost, a dobre performanse sistema su uslovljene optimalnim opterećenjem tranzitnih kapaciteta.\n\nPouzdanost, raspoloživost i dostupnost VPN mreža realiziranih korištenjem resursa javne mreže za prenos podataka su neovisne o izabranom protokolu."
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+</ScrollView>

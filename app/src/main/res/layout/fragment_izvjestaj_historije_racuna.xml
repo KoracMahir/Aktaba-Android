@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mojRegistar.IzvjestajHistorijeRacunaFragment">
+
+    <TextView
+        android:id="@+id/textView142"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/trideset_back"
+        android:layout_marginLeft="@dimen/trideset_back"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="IZVJEŠTAJ O HISTORIJI RAČUNA"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView143"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/trideset_back"
+        android:layout_marginLeft="@dimen/trideset_back"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Ova usluga se dodatno naplaćuje po važećem \n\nDa li ste sigurni da želite naručiti ovaj izvještaj?"
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView142" />
+
+    <TextView
+        android:id="@+id/textView144"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/trideset_back"
+        android:layout_marginLeft="@dimen/trideset_back"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Cjenovniku."
+        android:textColor="@color/akta_cyan"
+        android:textSize="@dimen/text_13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView143"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView142" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/trideset_back"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/akta_cyan"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="POŠALJI ZAHTJEV"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sesnaest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView143" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/trideset_back"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/akta_grey"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="PONIŠTI"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sesnaest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button25" />
+</androidx.constraintlayout.widget.ConstraintLayout>

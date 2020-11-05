@@ -223,17 +223,18 @@
             android:text="Slažem se sa uslovima korištenja usluge"
             android:layout_marginTop="12dp"
             android:layout_marginLeft="60dp"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:background="@drawable/ic_green"
-            android:layout_marginBottom="74dp"
-            android:layout_marginTop="39dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="74dp"
+            android:background="@color/akte_darkgreen"
             android:text="POŠALJI"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:layout_marginRight="30dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
