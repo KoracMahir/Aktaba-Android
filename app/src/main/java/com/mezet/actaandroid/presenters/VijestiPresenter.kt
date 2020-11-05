@@ -1,11 +1,9 @@
 package com.mezet.actaandroid.presenters
 
 import android.util.Log
-import com.mezet.actaandroid.fragments.HomeFragment
 import com.mezet.actaandroid.fragments.sections.OnePlusTwoFragment
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import com.mezet.actaandroid.services.RetrofitServices
-import com.mezet.actaandroid.views.MostRecentNewsView
 import com.mezet.actaandroid.views.VijestiView
 import retrofit2.Call
 import retrofit2.Callback

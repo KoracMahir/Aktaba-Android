@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tenderi"
+    app:startDestination="@id/tenderiFragment">
+
+    <fragment
+        android:id="@+id/tenderiSearchFragment"
+        android:name="com.mezet.actaandroid.fragments.main.tenderi.TenderiSearchFragment"
+        android:label="fragment_tenderi_search"
+        tools:layout="@layout/fragment_tenderi_search" />
+    <fragment
+        android:id="@+id/tenderiFragment"
+        android:name="com.mezet.actaandroid.fragments.main.tenderi.TenderiFragment"
+        android:label="fragment_tenderi"
+        tools:layout="@layout/fragment_tenderi" />
+</navigation>

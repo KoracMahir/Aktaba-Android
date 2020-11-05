@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="50dp"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".fragments.main.vijesti.HomeFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

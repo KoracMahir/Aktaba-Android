@@ -20,7 +20,7 @@ import com.mezet.actaandroid.presenters.VijestiPresenter
 import com.mezet.actaandroid.presenters.vijesti.BiHPresenter
 import com.mezet.actaandroid.views.VijestiView
 
-class BihFragment : Fragment(),VijestiView {
+class BihFragment : Fragment(),VijestiView{
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

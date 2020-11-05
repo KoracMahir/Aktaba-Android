@@ -20,13 +20,14 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
-<!--    <dimen name="activity_horizontal_margin">16dp</dimen>-->
-<!--    <dimen name="activity_vertical_margin">16dp</dimen>-->
-<!--    <dimen name="nav_header_vertical_spacing">8dp</dimen>-->
-<!--    <dimen name="nav_header_height">176dp</dimen>-->
-<!--    <dimen name="fab_margin">16dp</dimen>-->
-<!--    <dimen name="text_13sp">13sp</dimen>-->
+    <!--    <dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--    <dimen name="activity_vertical_margin">16dp</dimen>-->
+    <!--    <dimen name="nav_header_vertical_spacing">8dp</dimen>-->
+    <!--    <dimen name="nav_header_height">176dp</dimen>-->
+    <!--    <dimen name="fab_margin">16dp</dimen>-->
+    <!--    <dimen name="text_13sp">13sp</dimen>-->
     <!--    <item name="text_13sp" type="dimen" format="float">13.5sp</item>-->
 
 </resources>

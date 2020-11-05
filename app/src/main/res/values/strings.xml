@@ -45,5 +45,6 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_news">NewsActivity</string>
     <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

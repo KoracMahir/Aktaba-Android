@@ -1,11 +1,14 @@
 package com.mezet.actaandroid.services
 
+import com.mezet.actaandroid.models.LoginResponse
 import com.mezet.actaandroid.models.Vijesti
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface RetrofitServices{
 
@@ -55,6 +58,12 @@ interface RetrofitServices{
 
     @GET("/Services/MostRecentNews?categoryId=16")
     fun getPrivatizacija(): Call<MostRecentNews>
+
+    //LOGIN
+    @GET("/Services/Login")
+    fun Login(@Query("uname") uname : String
+                ,@Query("password")password:String): Call<LoginResponse>
+
 
     companion object{
         fun create():RetrofitServices{
