@@ -1,8 +1,6 @@
 package com.mezet.actaandroid.presenters
 
-import android.content.Context
 import android.util.Log
-import com.mezet.actaandroid.fragments.HomeFragment
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import com.mezet.actaandroid.services.RetrofitServices
 import com.mezet.actaandroid.views.MostRecentNewsView

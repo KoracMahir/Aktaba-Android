@@ -1,13 +1,16 @@
 package com.mezet.actaandroid.fragments.main.vijesti
 
 import android.os.Bundle
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,6 +34,18 @@ class Kapital : Fragment(),MostRecentNewsView {
 
         val view : View = inflater.inflate(R.layout.fragment_kapital, container, false)
         MostRecentNewsPresenter(this).getMostRecentFromAPI()
+
+        val drawer =activity?.findViewById(R.id.drawer_layout) as DrawerLayout
+        val vijesit_drawer = activity?.findViewById(R.id.vijesti_drawer) as TextView
+        val investicije_drawer = activity?.findViewById(R.id.investicije_drawer) as TextView
+        val kapital_drawer = activity?.findViewById(R.id.kapital_drawer) as TextView
+        val eu_drawer = activity?.findViewById(R.id.eu_drawer) as TextView
+        val najave_drawer = activity?.findViewById(R.id.najave_drawer) as TextView
+        val licnosti_drawer = activity?.findViewById(R.id.licnosti_drawer) as TextView
+        val karijera_drawer = activity?.findViewById(R.id.karijera_drawer) as TextView
+        val kolumna_drawer = activity?.findViewById(R.id.kolumna_drawer) as TextView
+        val pauza_drawer = activity?.findViewById(R.id.pauza_drawer) as TextView
+        val analiza_drawer = activity?.findViewById(R.id.analize_drawer) as TextView
 
         val parent: Fragment? = (parentFragment as NavHostFragment).parentFragment
         val home = parent?.view?.findViewById(R.id.home_btn) as Button
@@ -68,6 +83,46 @@ class Kapital : Fragment(),MostRecentNewsView {
         pauza_choosed.visibility=View.GONE
         kolumna_choosed.visibility=View.GONE
         analiza_choosed.visibility=View.GONE
+
+        vijesit_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_vijesti)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        investicije_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_investicije)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        kapital_drawer.setOnClickListener(View.OnClickListener {
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        eu_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_EU)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        najave_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_najaves)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        licnosti_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_licnosti)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        karijera_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_karijera)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        kolumna_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_kolumna)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        pauza_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_pauza)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
+        analiza_drawer.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_kapital_to_analiza)
+            drawer.closeDrawer(Gravity.LEFT)
+        })
 
         kapital.setOnClickListener(View.OnClickListener {
         })

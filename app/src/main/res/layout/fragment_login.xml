@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/slika_pozadina"
-    tools:context=".fragments.LoginFragment">
+    tools:context=".fragments.main.login.LoginFragment">
 
     <Button
+        android:id="@+id/back_btn_login"
         android:layout_width="@dimen/dvadeset"
         android:layout_height="@dimen/dvadeset"
         android:layout_marginLeft="@dimen/trideset_back"
@@ -15,17 +16,18 @@
         android:background="@drawable/ic_header_back"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:layout_width="90dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_logo_akta"
+        app:srcCompat="@drawable/ic_logo_akta"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="261dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
     <!-- Rectangle 29 -->
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/email_login"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -42,7 +44,7 @@
         android:textSize="13dp"/>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_login"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -52,17 +54,29 @@
         android:hint="Lozinka:"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email_login"
         android:layout_marginLeft="39dp"
         android:layout_marginRight="39dp"
         android:padding="13dp"
         android:textSize="13dp"/>
 
+    <TextView
+        android:id="@+id/zaboravili_ste_sifru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password_login"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Zaboravili ste šifru?"
+        android:textColor="@color/registar"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"/>
     <Button
+        android:id="@+id/prijava_btn"
         android:layout_width="match_parent"
         android:layout_height="41dp"
         android:background="@drawable/login_btn"
-        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password_login"
         android:layout_marginTop="64dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

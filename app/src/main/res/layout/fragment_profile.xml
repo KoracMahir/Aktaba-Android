@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.main.PromoMain"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:id="@+id/topbar"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:background="@color/akta_blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/kolumna_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="kolumna"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/kolumna_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/kolumna_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/kolumna_btn"
+                        app:layout_constraintRight_toRightOf="@id/kolumna_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/pauza_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="pauza"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/pauza_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/pauza_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/pauza_btn"
+                        app:layout_constraintRight_toRightOf="@id/pauza_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/analize_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="analize"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/analiza_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/analize_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/analize_btn"
+                        app:layout_constraintRight_toRightOf="@id/analize_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="2dp"
+            android:layout_marginBottom="6dp"
+            app:srcCompat="@drawable/ic_line_white"
+            tools:ignore="NotSibling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/homefragment1"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph_profile"/>
+
+
+</LinearLayout>

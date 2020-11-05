@@ -10,5 +10,5 @@
         android:id="@+id/home2"
         android:name="com.mezet.actaandroid.fragments.main.Home"
         android:label="fragment_home2"
-        tools:layout="@layout/fragment_home2" />
+        tools:layout="@layout/fragment_home2"/>
 </navigation>
