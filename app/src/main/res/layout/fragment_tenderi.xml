@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".TenderiFragment">
+    tools:context=".fragments.TenderiFragment">
 
 
     <Button
@@ -58,7 +58,7 @@
                 <ImageView
                     android:layout_width="7.4dp"
                     android:layout_height="12dp"
-                    android:src="@drawable/ic_arrow_right"
+                    app:srcCompat="@drawable/ic_arrow_right"
                     app:layout_constraintLeft_toRightOf="@id/najnoviji"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginTop="21dp"
