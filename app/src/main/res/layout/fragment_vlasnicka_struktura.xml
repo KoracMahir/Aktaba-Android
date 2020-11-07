@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mojRegistar.VlasnickaStrukturaFragment">
+    tools:context=".fragments.main.mojRegistar.VlasnickaStrukturaFragment">
 
 
     <fragment
         android:id="@+id/fragment"
-        android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.FirmaHeaderFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
