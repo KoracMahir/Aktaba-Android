@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UpravaRegistarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment5"
+            android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView95" />
+
+        <TextView
+            android:id="@+id/textView230"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="UPRAVA"
+            android:textColor="@color/text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="6"
+            tools:listitem="@layout/uprava_registar_item" >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView236"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PRETHODNA UPRAVA"
+            android:textColor="@color/text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="4"
+            tools:listitem="@layout/prethodna_uprava_item" />
+    </LinearLayout>
+</ScrollView>
