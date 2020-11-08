@@ -1,4 +1,4 @@
-package com.mezet.actaandroid.fragments
+package com.mezet.actaandroid.fragments.main.mojRegistar
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
