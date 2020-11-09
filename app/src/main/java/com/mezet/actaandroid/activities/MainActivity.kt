@@ -22,6 +22,7 @@ import com.diegodobelo.expandingview.ExpandingItem
 import com.diegodobelo.expandingview.ExpandingList
 import com.google.android.material.navigation.NavigationView
 import com.mezet.actaandroid.R
+import com.mezet.actaandroid.activities.pretraga.PretragaVijestiActivity
 import com.mezet.actaandroid.fragments.sections.NajaveFragment
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.appbar.view.*
@@ -50,9 +51,14 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(setOf(
             R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
 //        drawerLayout.openDrawer(Gravity.LEFT) //open nav_drawer
-        appbar.menu_1.setOnClickListener(View.OnClickListener {
+        appbar_vijesti.menu_1.setOnClickListener(View.OnClickListener {
             val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
             drawerLayout.openDrawer(Gravity.LEFT)
+        })
+        appbar_vijesti.search_btn.setOnClickListener(View.OnClickListener {
+            val intent = Intent (this, PretragaVijestiActivity::class.java)
+            intent.putExtra("opened","vijesti")
+            this.startActivity(intent)
         })
 
         drawer_home_btn_vijesti.setOnClickListener(View.OnClickListener {

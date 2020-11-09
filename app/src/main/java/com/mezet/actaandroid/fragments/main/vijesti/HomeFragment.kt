@@ -42,13 +42,9 @@ class HomeFragment : Fragment(),MostRecentNewsView {
         val name=
             prefs?.getString("screen", "HOME") //"No name defined" is the default value.
 
-//        if(name=="EU")
-//            goEU()
-
 
         val parent: Fragment? = (parentFragment as NavHostFragment).parentFragment
 
-        Log.d("subfragment",""+parent+" "+ activity)
         val drawer =activity?.findViewById(R.id.drawer_layout) as DrawerLayout
         val vijesit_drawer = activity?.findViewById(R.id.vijesti_drawer) as TextView
         val investicije_drawer = activity?.findViewById(R.id.investicije_drawer) as TextView

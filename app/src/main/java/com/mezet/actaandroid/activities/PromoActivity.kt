@@ -12,13 +12,16 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.diegodobelo.expandingview.ExpandingList
 import com.google.android.material.navigation.NavigationView
 import com.mezet.actaandroid.R
+import com.mezet.actaandroid.activities.pretraga.PretragaPromoActivity
+import com.mezet.actaandroid.activities.pretraga.PretragaVijestiActivity
 import kotlinx.android.synthetic.main.activity_main2.*
-import kotlinx.android.synthetic.main.activity_main2.appbar
 import kotlinx.android.synthetic.main.activity_main2.home_expand
 import kotlinx.android.synthetic.main.activity_main2.vijesti_expand
 import kotlinx.android.synthetic.main.activity_profile.*
 import kotlinx.android.synthetic.main.activity_promo.*
 import kotlinx.android.synthetic.main.appbar.view.*
+import kotlinx.android.synthetic.main.appbar.view.menu_1
+import kotlinx.android.synthetic.main.appbar_promo.view.*
 
 class PromoActivity : AppCompatActivity() {
     private var mExpandingList: ExpandingList? = null
@@ -38,9 +41,14 @@ class PromoActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(setOf(
             R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
 //        drawerLayout.openDrawer(Gravity.LEFT) //open nav_drawer
-        appbar.menu_1.setOnClickListener(View.OnClickListener {
+        appbar_promo.menu_1.setOnClickListener(View.OnClickListener {
             val drawerLayout: DrawerLayout= findViewById(R.id.drawer_layout)
             drawerLayout.openDrawer(Gravity.LEFT)
+        })
+        appbar_promo.search_btn_promo.setOnClickListener(View.OnClickListener {
+            val intent = Intent (this, PretragaPromoActivity::class.java)
+            intent.putExtra("opened","vijesti")
+            this.startActivity(intent)
         })
 
         val open=intent.getStringExtra("open")

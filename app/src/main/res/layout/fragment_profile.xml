@@ -26,79 +26,160 @@
                     android:layout_marginLeft="29dp"
                     android:layout_height="wrap_content">
                     <Button
-                        android:id="@+id/kolumna_btn"
+                        android:id="@+id/profil_korisnika_btn"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         android:layout_width="wrap_content"
                         android:layout_height="23dp"
-                        android:text="kolumna"
+                        android:text="profil korisnika"
                         android:textColor="@color/white"
                         android:fontFamily="@font/open_sans"
                         android:background="#00FFFFFF"
                         android:textSize="15dp"/>
                     <ImageView
-                        android:id="@+id/kolumna_choosed"
+                        android:id="@+id/profil_korisnika_choosed"
                         android:layout_width="0dp"
                         android:layout_height="3dp"
-                        app:layout_constraintTop_toBottomOf="@id/kolumna_btn"
+                        app:layout_constraintTop_toBottomOf="@id/profil_korisnika_btn"
                         app:srcCompat="@drawable/ic_line_big"
-                        app:layout_constraintLeft_toLeftOf="@id/kolumna_btn"
-                        app:layout_constraintRight_toRightOf="@id/kolumna_btn"
+                        app:layout_constraintLeft_toLeftOf="@id/profil_korisnika_btn"
+                        app:layout_constraintRight_toRightOf="@id/profil_korisnika_btn"
                         android:scaleType="centerCrop"
                         android:layout_marginTop="2dp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
                     android:layout_height="wrap_content">
                     <Button
-                        android:id="@+id/pauza_btn"
+                        android:id="@+id/profil_kompanije_btn"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         android:layout_width="wrap_content"
                         android:layout_height="23dp"
-                        android:text="pauza"
+                        android:text="profil kompanije"
                         android:textColor="@color/white"
                         android:fontFamily="@font/open_sans"
                         android:background="#00FFFFFF"
                         android:textSize="15dp"/>
                     <ImageView
-                        android:id="@+id/pauza_choosed"
+                        android:id="@+id/profil_kompanije_choosed"
                         android:layout_width="0dp"
                         android:layout_height="3dp"
-                        app:layout_constraintTop_toBottomOf="@id/pauza_btn"
+                        app:layout_constraintTop_toBottomOf="@id/profil_kompanije_btn"
                         app:srcCompat="@drawable/ic_line_big"
-                        app:layout_constraintLeft_toLeftOf="@id/pauza_btn"
-                        app:layout_constraintRight_toRightOf="@id/pauza_btn"
+                        app:layout_constraintLeft_toLeftOf="@id/profil_kompanije_btn"
+                        app:layout_constraintRight_toRightOf="@id/profil_kompanije_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/newsletter_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="newsletter"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/newsletter_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/newsletter_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/newsletter_btn"
+                        app:layout_constraintRight_toRightOf="@id/newsletter_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/pracenjekompanija_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="PRAĆENJE KOMPANIJA"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/pracenjekompanija_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/pracenjekompanija_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/pracenjekompanija_btn"
+                        app:layout_constraintRight_toRightOf="@id/pracenjekompanija_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/izdvojeno_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="izdvojeno"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/izdvojeno_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/izdvojeno_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/izdvojeno_btn"
+                        app:layout_constraintRight_toRightOf="@id/izdvojeno_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="150dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/posaljiupit_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="POŠALJI UPIT"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/posaljiupit_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/posaljiupit_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/posaljiupit_btn"
+                        app:layout_constraintRight_toRightOf="@id/posaljiupit_btn"
                         android:scaleType="centerCrop"
                         android:layout_marginTop="2dp"/>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <Button
-                        android:id="@+id/analize_btn"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        android:layout_width="wrap_content"
-                        android:layout_height="23dp"
-                        android:text="analize"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/open_sans"
-                        android:background="#00FFFFFF"
-                        android:textSize="15dp"/>
-                    <ImageView
-                        android:id="@+id/analiza_choosed"
-                        android:layout_width="0dp"
-                        android:layout_height="3dp"
-                        app:layout_constraintTop_toBottomOf="@id/analize_btn"
-                        app:srcCompat="@drawable/ic_line_big"
-                        app:layout_constraintLeft_toLeftOf="@id/analize_btn"
-                        app:layout_constraintRight_toRightOf="@id/analize_btn"
-                        android:scaleType="centerCrop"
-                        android:layout_marginTop="2dp"/>
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </LinearLayout>

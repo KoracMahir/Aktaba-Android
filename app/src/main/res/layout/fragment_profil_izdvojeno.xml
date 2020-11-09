@@ -6,161 +6,52 @@
     android:layout_height="wrap_content"
     tools:context=".fragments.main.mojProfil.ProfilIzdvojenoFragment">
 
-    <TextView
-        android:id="@+id/textView60"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/open_sans"
-        android:text="7.11.21019"
-        android:textColor="@color/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView63"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+    <LinearLayout
+        android:id="@+id/bar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="PRODAJA PUTNIČKOG AUTOMOBILA VW PASSAT ALLTRACK DIESEL 4X4"
-        android:textColor="@color/akta_darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView60" />
-
-    <TextView
-        android:id="@+id/textView64"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/open_sans"
-        android:text="(važi do 3.02.2020.)"
-        android:textColor="@color/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView63" />
-
-    <View
-        android:id="@+id/view1"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/akta_darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView64" />
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/tenderi_izdvojeno"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/akta_blue"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:text="izdvojeni\ntenderi"/>
+        <Button
+            android:id="@+id/clanci_izdvojeno"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/okvir_plava"
+            android:textColor="@color/akta_blue"
+            android:textSize="12dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="izdvojeni\nČLANCI"/>
+        <Button
+            android:id="@+id/promo_izdvojeno"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/okvir_plava"
+            android:textColor="@color/akta_blue"
+            android:textSize="12dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="izdvojeni\npromo ČLANCI"/>
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView67"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/open_sans"
-        android:text="7.11.21019"
-        android:textColor="@color/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view1" />
-
-    <TextView
-        android:id="@+id/textView65"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="PRODAJA PUTNIČKOG AUTOMOBILA VW PASSAT ALLTRACK DIESEL 4X4"
-        android:textColor="@color/akta_darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView67" />
-
-    <TextView
-        android:id="@+id/textView66"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/open_sans"
-        android:text="(važi do 3.02.2020.)"
-        android:textColor="@color/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView65" />
-
-    <View
-        android:id="@+id/view2"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/izdvojeno_recycler"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/akta_darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView66" />
-
-    <TextView
-        android:id="@+id/textView70"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/open_sans"
-        android:text="7.11.21019"
-        android:textColor="@color/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view2" />
-
-    <TextView
-        android:id="@+id/textView68"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="PRODAJA PUTNIČKOG AUTOMOBILA VW PASSAT ALLTRACK DIESEL 4X4"
-        android:textColor="@color/akta_darkblue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView70" />
-
-    <TextView
-        android:id="@+id/textView69"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/trideset_back"
-        android:layout_marginLeft="@dimen/trideset_back"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/open_sans"
-        android:text="(važi do 3.02.2020.)"
-        android:textColor="@color/text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView68" />
+        app:layout_constraintTop_toBottomOf="@id/bar"
+        tools:itemCount="2"
+        tools:listitem="@layout/izdvojeno_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

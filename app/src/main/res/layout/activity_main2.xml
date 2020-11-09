@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <include
-            android:id="@+id/appbar"
+            android:id="@+id/appbar_vijesti"
             layout="@layout/appbar"/>
         <fragment
             android:id="@+id/nav_host_fragment1"
