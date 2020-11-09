@@ -58,14 +58,12 @@ class LoginFragment : Fragment(),LoginView {
         val editor: SharedPreferences.Editor?=activity?.getSharedPreferences("MY_PREFS_NAME", MODE_PRIVATE)?.edit()
         editor?.putString("token", token)
         editor?.apply()
-        Log.d("login",""+token)
         val intent = Intent (activity, MainActivity::class.java)
         this.startActivity(intent)
     }
 
     override fun onLoginFailiure(message: String) {
         Toast.makeText(activity,""+message,Toast.LENGTH_LONG).show()
-        Log.d("login",""+message)
     }
 
 }

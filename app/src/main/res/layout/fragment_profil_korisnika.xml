@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/fullname_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16sp"
@@ -48,7 +48,7 @@
             app:tint="@color/akta_blue" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/email_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -73,7 +73,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/title_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -99,7 +99,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/fax_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -118,7 +118,7 @@
             android:contentDescription="@string/ikona"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/fax_profile"
             app:srcCompat="@drawable/ic_line" />
 
         <TextView
@@ -148,7 +148,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/paket_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_extrabold"
@@ -165,12 +165,12 @@
             android:fontFamily="@font/open_sans"
             android:text=" važi do "
             android:textColor="@color/text"
-            app:layout_constraintBottom_toBottomOf="@+id/textView25"
-            app:layout_constraintStart_toEndOf="@+id/textView25"
-            app:layout_constraintTop_toTopOf="@+id/textView25" />
+            app:layout_constraintBottom_toBottomOf="@+id/paket_profil"
+            app:layout_constraintStart_toEndOf="@+id/paket_profil"
+            app:layout_constraintTop_toTopOf="@+id/paket_profil" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/vazido_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans"
@@ -194,7 +194,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/brojdana_profil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="55dp"
@@ -250,6 +250,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView15" />
 
         <EditText
+            android:background="@drawable/ic_rectangle_29_blue"
             android:id="@+id/oldpass"
             style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="0dp"
@@ -262,7 +263,6 @@
             android:hint="Stara šifre"
             android:inputType="textPassword"
             android:padding="13dp"
-            android:backgroundTint="@color/akta_darkblue"
             android:textColor="#9AA6AC"
             android:textColorHighlight="@color/akta_blue"
             android:textColorLink="@color/akta_blue"
@@ -272,6 +272,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
         <EditText
+            android:background="@drawable/ic_rectangle_29_blue"
             android:id="@+id/oldpass2"
             style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="0dp"
@@ -281,7 +282,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="@color/akta_darkblue"
             android:hint="Nova šifra"
             android:inputType="textPassword"
             android:padding="13dp"
@@ -295,6 +295,7 @@
             app:layout_constraintTop_toBottomOf="@+id/oldpass" />
 
         <EditText
+            android:background="@drawable/ic_rectangle_29_blue"
             android:id="@+id/oldpass3"
             style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
             android:layout_width="0dp"
@@ -304,7 +305,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
-            android:backgroundTint="@color/akta_darkblue"
             android:hint="Ponovljena nova šifra"
             android:inputType="textPassword"
             android:padding="13dp"
@@ -368,11 +368,11 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="TENDER PAKET "
             android:textColor="@color/akta_gold"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/tender_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/tender_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -394,11 +394,11 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="REGISTAR PAKET "
             android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox2" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/registar_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/registar_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -406,12 +406,11 @@
             android:layout_marginTop="25dp"
             android:checked="false"
             android:buttonTint="@color/akte_darkgreen"
-            android:clickable="false"
             android:fontFamily="@font/open_sans"
             android:text="\n    300KM + PDV (godišnja pretplata)"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@id/tender_checkbox" />
 
         <TextView
             android:id="@+id/textView35"
@@ -421,11 +420,11 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="PROMO PAKET "
             android:textColor="@color/akta_pink"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox3" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/promo_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/promo_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -433,12 +432,11 @@
             android:layout_marginTop="25dp"
             android:checked="false"
             android:buttonTint="@color/akta_pink"
-            android:clickable="false"
             android:fontFamily="@font/open_sans"
             android:text="\n    400KM + PDV (godišnja pretplata)"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox2" />
+            app:layout_constraintTop_toBottomOf="@id/registar_checkbox" />
 
         <TextView
             android:id="@+id/textView36"
@@ -448,11 +446,11 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="REGISTAR PLUS PAKET "
             android:textColor="@color/akta_cyan"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox4" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/registarplus_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/registarplus_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -460,12 +458,11 @@
             android:layout_marginTop="25dp"
             android:checked="false"
             android:buttonTint="@color/akta_cyan"
-            android:clickable="false"
             android:fontFamily="@font/open_sans"
             android:text="\n    450KM + PDV (godišnja pretplata)"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox3" />
+            app:layout_constraintTop_toBottomOf="@id/promo_checkbox" />
 
         <TextView
             android:id="@+id/textView37"
@@ -475,11 +472,11 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="PRIMARNI PAKET "
             android:textColor="@color/akta_grey"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox5" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/primarni_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/primarni_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -487,12 +484,11 @@
             android:layout_marginTop="25dp"
             android:checked="false"
             android:buttonTint="@color/akta_grey"
-            android:clickable="false"
             android:fontFamily="@font/open_sans"
             android:text="\n    600KM + PDV (godišnja pretplata)"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox4" />
+            app:layout_constraintTop_toBottomOf="@id/registarplus_checkbox" />
 
         <TextView
             android:id="@+id/textView38"
@@ -502,26 +498,25 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="PREMIUM PAKET "
             android:textColor="@color/akta_darkblue"
-            app:layout_constraintLeft_toLeftOf="@id/checkBox"
-            app:layout_constraintTop_toTopOf="@id/checkBox6" />
+            app:layout_constraintLeft_toLeftOf="@id/tender_checkbox"
+            app:layout_constraintTop_toTopOf="@id/premium_checkbox" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/premium_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
-            android:checked="true"
+            android:checked="false"
             android:buttonTint="@color/akta_darkblue"
-            android:clickable="false"
             android:fontFamily="@font/open_sans"
             android:text="\n    960KM + PDV (godišnja pretplata)"
             android:textColorHighlight="@color/akta_blue"
             android:textColorLink="@color/akta_darkblue"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox5" />
+            app:layout_constraintTop_toBottomOf="@id/primarni_checkbox" />
 
         <Button
             android:id="@+id/button13"
@@ -539,7 +534,7 @@
             android:textSize="@dimen/sesnaest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox6" />
+            app:layout_constraintTop_toBottomOf="@id/premium_checkbox" />
 
         <Button
             android:id="@+id/button14"

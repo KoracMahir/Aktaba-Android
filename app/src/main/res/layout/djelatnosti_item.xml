@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/id_djelatnosti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="60.10"
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/djelatnost_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Emitiranje radijskoj programa"
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintLeft_toRightOf="@+id/id_djelatnosti"
+        app:layout_constraintTop_toTopOf="@id/id_djelatnosti" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="32dp"
-    tools:context=".mojRegistar.KapitalFirmeFragment">
+    tools:context=".fragments.main.mojRegistar.KapitalFirmeFragment">
 
     <fragment
         android:id="@+id/fragment3"
-        android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.FirmaHeaderFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

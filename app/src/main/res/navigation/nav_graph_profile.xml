@@ -9,5 +9,126 @@
         android:id="@+id/profilKorisnikaFragment"
         android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilKorisnikaFragment"
         android:label="fragment_profil_korisnika"
-        tools:layout="@layout/fragment_profil_korisnika" />
+        tools:layout="@layout/fragment_profil_korisnika" >
+        <action
+            android:id="@+id/action_profilKorisnikaFragment_to_profilKompanijeFragment"
+            app:destination="@id/profilKompanijeFragment" />
+        <action
+            android:id="@+id/action_profilKorisnikaFragment_to_profilPracenjeFragment"
+            app:destination="@id/profilPracenjeFragment" />
+        <action
+            android:id="@+id/action_profilKorisnikaFragment_to_profilUpitFragment"
+            app:destination="@id/profilUpitFragment" />
+        <action
+            android:id="@+id/action_profilKorisnikaFragment_to_profilNewsFragment"
+            app:destination="@id/profilNewsFragment" />
+        <action
+            android:id="@+id/action_profilKorisnikaFragment_to_profilIzdvojenoFragment"
+            app:destination="@id/profilIzdvojenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilKompanijeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilKompanijeFragment"
+        android:label="fragment_profil_kompanije"
+        tools:layout="@layout/fragment_profil_kompanije" >
+        <action
+            android:id="@+id/action_profilKompanijeFragment_to_profilKorisnikaFragment"
+            app:destination="@id/profilKorisnikaFragment" />
+        <action
+            android:id="@+id/action_profilKompanijeFragment_to_profilPracenjeFragment"
+            app:destination="@id/profilPracenjeFragment" />
+        <action
+            android:id="@+id/action_profilKompanijeFragment_to_profilUpitFragment"
+            app:destination="@id/profilUpitFragment" />
+        <action
+            android:id="@+id/action_profilKompanijeFragment_to_profilNewsFragment"
+            app:destination="@id/profilNewsFragment" />
+        <action
+            android:id="@+id/action_profilKompanijeFragment_to_profilIzdvojenoFragment"
+            app:destination="@id/profilIzdvojenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilNewsFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilNewsFragment"
+        android:label="fragment_profil_news"
+        tools:layout="@layout/fragment_profil_news" >
+        <action
+            android:id="@+id/action_profilNewsFragment_to_profilKorisnikaFragment"
+            app:destination="@id/profilKorisnikaFragment" />
+        <action
+            android:id="@+id/action_profilNewsFragment_to_profilKompanijeFragment"
+            app:destination="@id/profilKompanijeFragment" />
+        <action
+            android:id="@+id/action_profilNewsFragment_to_profilPracenjeFragment"
+            app:destination="@id/profilPracenjeFragment" />
+        <action
+            android:id="@+id/action_profilNewsFragment_to_profilUpitFragment"
+            app:destination="@id/profilUpitFragment" />
+        <action
+            android:id="@+id/action_profilNewsFragment_to_profilIzdvojenoFragment"
+            app:destination="@id/profilIzdvojenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilPracenjeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilPracenjeFragment"
+        android:label="fragment_profil_pracenje"
+        tools:layout="@layout/fragment_profil_pracenje" >
+        <action
+            android:id="@+id/action_profilPracenjeFragment_to_profilUpitFragment"
+            app:destination="@id/profilUpitFragment" />
+        <action
+            android:id="@+id/action_profilPracenjeFragment_to_profilKompanijeFragment"
+            app:destination="@id/profilKompanijeFragment" />
+        <action
+            android:id="@+id/action_profilPracenjeFragment_to_profilKorisnikaFragment"
+            app:destination="@id/profilKorisnikaFragment" />
+        <action
+            android:id="@+id/action_profilPracenjeFragment_to_profilNewsFragment"
+            app:destination="@id/profilNewsFragment" />
+        <action
+            android:id="@+id/action_profilPracenjeFragment_to_profilIzdvojenoFragment"
+            app:destination="@id/profilIzdvojenoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilIzdvojenoFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilIzdvojenoFragment"
+        android:label="fragment_profil_izdvojeno"
+        tools:layout="@layout/fragment_profil_izdvojeno" >
+        <action
+            android:id="@+id/action_profilIzdvojenoFragment_to_profilNewsFragment"
+            app:destination="@id/profilNewsFragment" />
+        <action
+            android:id="@+id/action_profilIzdvojenoFragment_to_profilKorisnikaFragment"
+            app:destination="@id/profilKorisnikaFragment" />
+        <action
+            android:id="@+id/action_profilIzdvojenoFragment_to_profilKompanijeFragment"
+            app:destination="@id/profilKompanijeFragment" />
+        <action
+            android:id="@+id/action_profilIzdvojenoFragment_to_profilPracenjeFragment"
+            app:destination="@id/profilPracenjeFragment" />
+        <action
+            android:id="@+id/action_profilIzdvojenoFragment_to_profilUpitFragment"
+            app:destination="@id/profilUpitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilUpitFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojProfil.ProfilUpitFragment"
+        android:label="fragment_profil_upit"
+        tools:layout="@layout/fragment_profil_upit" >
+        <action
+            android:id="@+id/action_profilUpitFragment_to_profilIzdvojenoFragment"
+            app:destination="@id/profilIzdvojenoFragment" />
+        <action
+            android:id="@+id/action_profilUpitFragment_to_profilNewsFragment"
+            app:destination="@id/profilNewsFragment" />
+        <action
+            android:id="@+id/action_profilUpitFragment_to_profilKorisnikaFragment"
+            app:destination="@id/profilKorisnikaFragment" />
+        <action
+            android:id="@+id/action_profilUpitFragment_to_profilKompanijeFragment"
+            app:destination="@id/profilKompanijeFragment" />
+        <action
+            android:id="@+id/action_profilUpitFragment_to_profilPracenjeFragment"
+            app:destination="@id/profilPracenjeFragment" />
+    </fragment>
 </navigation>

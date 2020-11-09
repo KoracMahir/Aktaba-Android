@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SearchFragment">
+    tools:context=".fragments.main.vijesti.search.SearchFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
             app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName5" />
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/search_kategorije"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -78,7 +78,7 @@
             android:text="TERITORIJA"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button21" />
+            app:layout_constraintTop_toBottomOf="@id/search_kategorije" />
 
         <EditText
             android:id="@+id/editTextTextPersonName6"
@@ -102,7 +102,8 @@
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView72" />
+            app:layout_constraintTop_toBottomOf="@id/textView72"
+            android:drawableRight="@drawable/ic_arrowdown" />
 
         <EditText
             android:id="@+id/editTextTextPersonName7"
@@ -189,7 +190,7 @@
             app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName9" />
 
         <Button
-            android:id="@+id/button22"
+            android:id="@+id/search_kategorije_privrede"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -222,7 +223,7 @@
             android:text="CPV KOD - RJEČNIK JAVNIH NABAVKI"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button22" />
+            app:layout_constraintTop_toBottomOf="@id/search_kategorije_privrede" />
 
         <EditText
             android:id="@+id/editTextTextPersonName10"
