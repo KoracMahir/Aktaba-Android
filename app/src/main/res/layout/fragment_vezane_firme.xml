@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.mojRegistar.VezaneFirmeFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment16"
+            android:name="com.mezet.actaandroid.fragments.main.mojRegistar.FirmaHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view32"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey" />
+
+        <TextView
+            android:id="@+id/textView279"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="VEZANE FIRME"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName36"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Unesite naziv frime"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <Button
+            android:id="@+id/button43"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="@dimen/trideset_back"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/akta_cyan"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="TRAŽI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="10"
+            tools:listitem="@layout/vezane_firme_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

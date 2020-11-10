@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.mojRegistar.DrugiKontaktiFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment13"
+            android:name="com.mezet.actaandroid.fragments.main.mojRegistar.FirmaHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey" />
+
+        <TextView
+            android:id="@+id/textView245"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="DRUGI KONTAKTI"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView246"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="KONTAKT CENTAR BH TELECOMA"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/textView257"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="ZA FIZIČKA LICA"
+                android:textColor="@color/o_akta"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView259"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginLeft="170dp"
+                android:fontFamily="@font/open_sans"
+                android:text="1444"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView258"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="ZA PRAVNA LICA"
+                android:textColor="@color/o_akta"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView257" />
+
+            <TextView
+                android:id="@+id/textView260"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="1322"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="@+id/textView259"
+                app:layout_constraintTop_toTopOf="@id/textView258" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView251"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="ODNOSI S JAVNOŠĆU"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/textView252"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Nađa Lutvikadić"
+                android:textColor="@color/o_akta"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView253"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginLeft="170dp"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 256 011"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView254"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="PR manager"
+                android:textColor="@color/o_akta"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView252" />
+
+            <TextView
+                android:id="@+id/textView255"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 256 012"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="@+id/textView253"
+                app:layout_constraintTop_toTopOf="@id/textView254" />
+
+            <TextView
+                android:id="@+id/textView256"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 256 010"
+                android:textColor="@color/akta_cyan"
+                android:textSize="@dimen/text_13sp"
+                app:layout_constraintStart_toStartOf="@id/textView255"
+                app:layout_constraintTop_toBottomOf="@+id/textView255" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView261"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="UPRAVA "
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView262"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="KABINET GENERALNOG DIREKTORA"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView264"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="+387 33 256 011"
+            android:textColor="@color/akta_cyan"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView265"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="+387 33 256 012"
+            android:textColor="@color/akta_cyan"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView266"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="+387 33 256 010"
+            android:textColor="@color/akta_cyan"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView267"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Franca Lehara 7, Sarajevo  "
+            android:textColor="@color/akta_cyan"
+            android:textSize="@dimen/text_13sp" />
+
+        <TextView
+            android:id="@+id/textView268"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="mirsad.zaimovic@bhtelecom.ba "
+            android:textColor="@color/akta_cyan"
+            android:textSize="@dimen/text_13sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="20"
+            tools:listitem="@layout/drugi_kontakti_item" />
+
+    </LinearLayout>
+</ScrollView>

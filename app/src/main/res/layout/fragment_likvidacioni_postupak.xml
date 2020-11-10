@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.mojRegistar.LikvidacioniPostupakFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/likvidiranafirma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView275"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGO"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                app:layout_constraintEnd_toEndOf="@+id/imageView63"
+                app:layout_constraintStart_toStartOf="@+id/imageView63"
+                app:layout_constraintTop_toTopOf="@+id/imageView63" />
+
+            <ImageView
+                android:id="@+id/imageView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView63"
+                app:srcCompat="@drawable/ic_business"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/textView250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="AJMAL d.o.o. Bugojno "
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView64" />
+
+            <TextView
+                android:id="@+id/textView276"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text=" - U LIKVIDACIJI"
+                android:textColor="@color/o_akta"
+                app:layout_constraintLeft_toRightOf="@id/textView250"
+                app:layout_constraintTop_toTopOf="@id/imageView64" />
+
+            <TextView
+                android:id="@+id/textView263"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Društvo ograničene odgovornosti AJMAL Bugojno - U LIKVIDACIJI"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView250" />
+
+            <ImageView
+                android:id="@+id/imageView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView263"
+                app:srcCompat="@drawable/ic_location"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/textView269"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Hadžialića Ograda III/11"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView65" />
+
+            <TextView
+                android:id="@+id/textView274"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Bugojno"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView269" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view28"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey" />
+
+        <TextView
+            android:id="@+id/textView277"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="LIKVIDACIONI POSTUPAK"
+            android:textColor="@color/o_akta"
+            android:textSize="@dimen/text_13sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/likvidacioni_postupak_item" />
+    </LinearLayout>
+</ScrollView>
