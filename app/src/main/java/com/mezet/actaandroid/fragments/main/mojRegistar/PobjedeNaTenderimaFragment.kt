@@ -14,7 +14,8 @@ class PobjedeNaTenderimaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pobjede_na_tenderima, container, false)
+        val v= inflater.inflate(R.layout.fragment_pobjede_na_tenderima, container, false)
+        return v
     }
 
 }
