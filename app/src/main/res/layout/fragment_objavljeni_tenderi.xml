@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.main.mojRegistar.ObjavljeniTenderiFragment">
+    tools:context=".fragments.main.mojRegistar.sections.ObjavljeniTenderiFragment">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
 
         <fragment
             android:id="@+id/fragment7"
-            android:name="com.mezet.actaandroid.fragments.main.mojRegistar.FirmaHeaderFragment"
+            android:name="com.mezet.actaandroid.fragments.main.mojProfil.FirmaHeaderFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -26,7 +26,10 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            android:background="@color/border_grey" />
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment7" />
 
         <TextView
             android:id="@+id/textView239"
@@ -40,7 +43,10 @@
             android:fontFamily="@font/open_sans_bold"
             android:text="OBJAVLJENI TENDERI"
             android:textColor="@color/o_akta"
-            android:textSize="@dimen/text_13sp" />
+            android:textSize="@dimen/text_13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextTextPersonName32"
@@ -58,7 +64,10 @@
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
             android:textColor="@color/siva_text"
-            android:textSize="@dimen/text_12sp" />
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName15" />
 
         <Button
             android:id="@+id/button37"
@@ -75,17 +84,20 @@
             android:text="TRAŽI"
             android:textColor="@color/white"
             android:textSize="@dimen/sesnaest"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName16" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             tools:itemCount="20"
-            tools:listitem="@layout/objavljeni_tenderi_item" />
+            tools:listitem="@layout/prethodna_uprava_item" />
     </LinearLayout>
 
 </ScrollView>

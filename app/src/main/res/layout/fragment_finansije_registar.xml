@@ -5,66 +5,65 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_weight="1"
-    tools:context=".fragments.main.mojRegistar.FinansijeRegistarFragment">
+    tools:context=".fragments.main.mojRegistar.sections.FinansijeRegistarFragment">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/fragment8"
-        android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <fragment
+            android:id="@+id/fragment8"
+            android:name="com.mezet.actaandroid.fragments.main.mojProfil.FirmaHeaderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/border_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView95" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/border_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment8" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="FINANSIJE"
-        android:textColor="@color/text" />
-
-    <TextView
-        android:id="@+id/textView193"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans"
-        android:text="Ažurirano na osnovu podataka FIA-e odnosno APIF-a."
-        android:textColor="@color/text" />
-
-        <androidx.recyclerview.widget.RecyclerView
+        <TextView
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            tools:itemCount="6"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="FINANSIJE"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:id="@+id/textView193"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Ažurirano na osnovu podataka FIA-e odnosno APIF-a."
+            android:textColor="@color/text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/finansije_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="10"
             tools:listitem="@layout/finansije_registar_item" />
     </LinearLayout>
 </ScrollView>
