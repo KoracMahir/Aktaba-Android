@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textView196"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="123xxxxxxxxxxxxx - "
+        android:textColor="@color/text"
+        android:textSize="@dimen/text_13sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView197"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="ASA Banka dd Sarajevo"
+        android:textColor="@color/akta_cyan"
+        android:textSize="@dimen/text_13sp"
+        app:layout_constraintLeft_toRightOf="@id/textView196"
+        app:layout_constraintTop_toTopOf="@id/textView196" />
+
+    <TextView
+        android:id="@+id/textView198"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/open_sans"
+        android:text="DATUM OTVARANJA RAČUNA"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView196" />
+
+    <TextView
+        android:id="@+id/textView226"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/open_sans"
+        android:text="15.07.2004"
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintLeft_toLeftOf="@id/textView198"
+        app:layout_constraintTop_toTopOf="@id/textView198" />
+
+    <TextView
+        android:id="@+id/textView199"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans"
+        android:text="DATUM AKTIVACIJE RAČUNA"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView198" />
+
+    <TextView
+        android:id="@+id/textView227"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/open_sans"
+        android:text="15.07.2004"
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintLeft_toLeftOf="@id/textView198"
+        app:layout_constraintTop_toTopOf="@id/textView199" />
+
+    <TextView
+        android:id="@+id/textView200"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans"
+        android:text="DATUM AŽURIRANJA STATUSA"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView199" />
+
+    <TextView
+        android:id="@+id/textView228"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/open_sans"
+        android:text="06.12.2018"
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintLeft_toLeftOf="@id/textView198"
+        app:layout_constraintTop_toTopOf="@id/textView200" />
+
+    <TextView
+        android:id="@+id/textView201"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans"
+        android:text="DATUM PROGLAŠENJA GLAVNOG RAČUNA"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="@id/textView200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView200" />
+
+    <TextView
+        android:id="@+id/textView229"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:fontFamily="@font/open_sans"
+        android:text="15.07.2004."
+        android:textColor="@color/akte_darkgreen"
+        app:layout_constraintBottom_toBottomOf="@id/textView201"
+        app:layout_constraintLeft_toLeftOf="@id/textView198"
+        app:layout_constraintTop_toTopOf="@id/textView201" />
+
+    <Button
+        android:id="@+id/button36"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="30dp"
+        android:background="@color/akta_cyan"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="IZVJEŠTAJ O HISTORIJI RAČUNA"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sesnaest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView201" />
+</androidx.constraintlayout.widget.ConstraintLayout>

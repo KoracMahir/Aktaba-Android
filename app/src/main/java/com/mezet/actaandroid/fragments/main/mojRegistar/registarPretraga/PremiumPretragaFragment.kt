@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.mezet.actaandroid.R
 
 class PremiumPretragaFragment : Fragment() {
@@ -14,7 +18,33 @@ class PremiumPretragaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_premium_pretraga, container, false)
+        val v= inflater.inflate(R.layout.fragment_premium_pretraga, container, false)
+
+        val parent: Fragment? = (parentFragment as NavHostFragment).parentFragment
+
+        val pretraga_choosed = parent?.view?.findViewById(R.id.pretraga_choosed) as ImageView
+        val premium_choosed = parent?.view?.findViewById(R.id.premium_choosed) as ImageView
+        val plus_choosed = parent?.view?.findViewById(R.id.plus_choosed) as ImageView
+
+        val pretraga_btn = parent?.view?.findViewById(R.id.pretraga_btn) as Button
+        val premium_btn = parent?.view?.findViewById(R.id.premium_btn) as Button
+        val plus_btn = parent?.view?.findViewById(R.id.plus_btn) as Button
+
+        pretraga_choosed.visibility=View.GONE
+        premium_choosed.visibility=View.VISIBLE
+        plus_choosed.visibility=View.GONE
+
+        pretraga_btn.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_premiumPretragaFragment_to_registarPretragaFragment)
+        })
+        premium_btn.setOnClickListener(View.OnClickListener {
+
+        })
+        plus_btn.setOnClickListener(View.OnClickListener {
+            findNavController().navigate(R.id.action_premiumPretragaFragment_to_plusPretragaFragment)
+        })
+
+        return v
     }
 
 }

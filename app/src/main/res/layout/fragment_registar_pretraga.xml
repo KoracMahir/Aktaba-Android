@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView164"
+            android:id="@+id/companies_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -48,9 +48,9 @@
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             app:srcCompat="@drawable/ic_info"
-            app:layout_constraintBottom_toBottomOf="@+id/textView164"
+            app:layout_constraintBottom_toBottomOf="@+id/companies_count"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView164"
+            app:layout_constraintTop_toTopOf="@+id/companies_count"
             app:tint="@color/akta_cyan" />
 
         <TextView
@@ -63,7 +63,7 @@
             android:text="Potrebno je unijeti jedan od podataka za pretragu."
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView164" />
+            app:layout_constraintTop_toBottomOf="@+id/companies_count" />
 
         <EditText
             android:id="@+id/editTextTextPersonName12"
@@ -171,7 +171,7 @@
             app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName15" />
 
         <Button
-            android:id="@+id/button27"
+            android:id="@+id/trazi_pretraga"
             android:layout_width="0dp"
             android:layout_height="40sp"
             android:layout_marginStart="30dp"
@@ -204,6 +204,6 @@
             android:textSize="@dimen/sesnaest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button27" />
+            app:layout_constraintTop_toBottomOf="@id/trazi_pretraga" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

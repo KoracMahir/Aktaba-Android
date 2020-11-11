@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_registar_sections"
+    app:startDestination="@id/vlasnickaStrukturaFragment">
+
+    <fragment
+        android:id="@+id/vlasnickaStrukturaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.VlasnickaStrukturaFragment"
+        android:label="fragment_vlasnicka_struktura"
+        tools:layout="@layout/fragment_vlasnicka_struktura" >
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_kapitalFirmeFragment"
+            app:destination="@id/kapitalFirmeFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_upravaRegistarFragment"
+            app:destination="@id/upravaRegistarFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_finansijeRegistarFragment"
+            app:destination="@id/finansijeRegistarFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_opisDjelatnostiFragment"
+            app:destination="@id/opisDjelatnostiFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_robneMarkeFragment"
+            app:destination="@id/robneMarkeFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_robneUslugeFragment"
+            app:destination="@id/robneUslugeFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_stanjeRacunaFragment"
+            app:destination="@id/stanjeRacunaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kapitalFirmeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.KapitalFirmeFragment"
+        android:label="fragment_kapital_firme"
+        tools:layout="@layout/fragment_kapital_firme" />
+    <fragment
+        android:id="@+id/finansijeRegistarFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.FinansijeRegistarFragment"
+        android:label="fragment_finansije_registar"
+        tools:layout="@layout/fragment_finansije_registar" />
+    <fragment
+        android:id="@+id/izvjestajHistorijeRacunaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.IzvjestajHistorijeRacunaFragment"
+        android:label="fragment_izvjestaj_historije_racuna"
+        tools:layout="@layout/fragment_izvjestaj_historije_racuna" />
+    <fragment
+        android:id="@+id/objavljeniTenderiFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.ObjavljeniTenderiFragment"
+        android:label="fragment_objavljeni_tenderi"
+        tools:layout="@layout/fragment_objavljeni_tenderi" />
+    <fragment
+        android:id="@+id/opisDjelatnostiFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.OpisDjelatnostiFragment"
+        android:label="fragment_opis_djelatnosti"
+        tools:layout="@layout/fragment_opis_djelatnosti" />
+    <fragment
+        android:id="@+id/prijaviGreskuFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.PrijaviGreskuFragment"
+        android:label="fragment_prijavi_gresku"
+        tools:layout="@layout/fragment_prijavi_gresku" />
+    <fragment
+        android:id="@+id/robneMarkeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.RobneMarkeFragment"
+        android:label="fragment_robne_marke"
+        tools:layout="@layout/fragment_robne_marke" />
+    <fragment
+        android:id="@+id/robneUslugeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.RobneUslugeFragment"
+        android:label="fragment_robne_usluge"
+        tools:layout="@layout/fragment_robne_usluge" />
+    <fragment
+        android:id="@+id/upravaRegistarFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.UpravaRegistarFragment"
+        android:label="fragment_uprava_registar"
+        tools:layout="@layout/fragment_uprava_registar" />
+    <fragment
+        android:id="@+id/stanjeRacunaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.StanjeRacunaFragment"
+        android:label="fragment_stanje_racuna"
+        tools:layout="@layout/fragment_stanje_racuna" />
+</navigation>

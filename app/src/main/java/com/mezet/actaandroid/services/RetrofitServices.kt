@@ -93,6 +93,12 @@ interface RetrofitServices{
 
     @GET("/Services/ClientSendComment")
     fun sendUpit(@Query("comment") comment : String,@Header("Authorization")token:String): Call<UpitPayload>
+
+    //REGISTAR
+
+    @GET("/Services/getCompaniesCount")
+    fun getCompaniesCount(): Call<Int>
+
     companion object{
         fun create():RetrofitServices{
             val retrofit = Retrofit.Builder()

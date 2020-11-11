@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.pretraga.PretragaPromoActivity"></activity>
+        <activity android:name=".activities.pretraga.RegistarCompanyActivity"></activity>
+        <activity android:name=".activities.pretraga.PretragaRegistarActivity" />
+        <activity android:name=".activities.pretraga.PretragaPromoActivity" />
         <activity android:name=".activities.pretraga.PretragaVijestiActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.ProfileActivity" />

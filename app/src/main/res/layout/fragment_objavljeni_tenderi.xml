@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ObjavljeniTenderiFragment">
+    tools:context=".fragments.main.mojRegistar.sections.ObjavljeniTenderiFragment">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
 
         <fragment
             android:id="@+id/fragment7"
-            android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+            android:name="com.mezet.actaandroid.fragments.main.mojProfil.FirmaHeaderFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -29,7 +29,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView95" />
+            app:layout_constraintTop_toBottomOf="@id/fragment7" />
 
         <TextView
             android:id="@+id/textView239"

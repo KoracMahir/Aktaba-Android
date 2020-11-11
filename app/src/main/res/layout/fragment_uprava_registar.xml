@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.UpravaRegistarFragment">
+    tools:context=".fragments.main.mojRegistar.sections.UpravaRegistarFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
 
         <fragment
             android:id="@+id/fragment5"
-            android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+            android:name="com.mezet.actaandroid.fragments.main.mojProfil.FirmaHeaderFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -29,7 +29,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView95" />
+            app:layout_constraintTop_toBottomOf="@id/fragment5" />
 
         <TextView
             android:id="@+id/textView230"
@@ -45,6 +45,7 @@
             android:textColor="@color/text" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_uprava_firme"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"
@@ -52,7 +53,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
-            tools:itemCount="6"
+            tools:itemCount="2"
             tools:listitem="@layout/uprava_registar_item" >
 
         </androidx.recyclerview.widget.RecyclerView>
@@ -71,6 +72,7 @@
             android:textColor="@color/text" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_prethodna_uprava"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="30dp"

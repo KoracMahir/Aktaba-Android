@@ -48,7 +48,7 @@ data class CompanyPayload(
     val LogoPath: String,
     val MainRns: List<MainRn>,
     val ManagerFullName: String,
-    val ManagerHistory: List<Any>,
+    val ManagerHistory: List<Name>,
     val ManagerId: Int,
     val Mbs: String,
     val OtherContacts: String,

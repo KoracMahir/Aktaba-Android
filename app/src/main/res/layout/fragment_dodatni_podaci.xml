@@ -5,11 +5,309 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.main.mojRegistar.DodatniPodaciFragment">
+    tools:context=".fragments.main.mojRegistar.rezultati.DodatniPodaciFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/header">
+            <ImageView
+                android:id="@+id/logo_kompanija"
+                android:layout_width="180dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/ic_business"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo_kompanija"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/short_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="BH TELECOM d.d. Sarajevo"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView46" />
+
+            <TextView
+                android:id="@+id/long_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Dioničko društvo BH Telecom Sarajevo"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/short_name" />
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/ic_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView46"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/adresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="ul.Franca Lehara br.7"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView47" />
+
+            <TextView
+                android:id="@+id/zipcodepluscity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="71000 Sarajevo - Centar"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adresa" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text=""
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zipcodepluscity" />
+
+            <ImageView
+                android:id="@+id/imageView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView47"
+                app:srcCompat="@drawable/ic_phone"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 643 636 "
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView48" />
+
+            <TextView
+                android:id="@+id/phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 658 933"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone1" />
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView48"
+                app:srcCompat="@drawable/ic_local_printshop_24px"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/fax1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="+387 33 648 808"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView49" />
+
+
+            <ImageView
+                android:id="@+id/imageView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView49"
+                app:srcCompat="@drawable/ic_at"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/email_kompanije"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="podrska@bhtelecom.ba"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView50" />
+
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="45dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView50"
+                app:srcCompat="@drawable/ic_globe"
+                app:tint="@color/akta_cyan" />
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/open_sans"
+                android:text="http://www.bhtelecom.ba"
+                android:textColor="@color/akta_cyan"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView51"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageView51" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/social_icons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView51">
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_fb" />
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/imageView52"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_tweet" />
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/imageView53"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_linkedin" />
+
+                <ImageView
+                    android:id="@+id/imageView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/imageView54"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_yt" />
+
+                <ImageView
+                    android:id="@+id/imageView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/imageView55"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_gplus" />
+
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/imageView56"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_instagram" />
+
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/imageView57"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_pine" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
             android:id="@+id/view14"
@@ -23,7 +321,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/header"/>
 
         <LinearLayout
             android:id="@+id/linearlayout222"
@@ -40,7 +338,7 @@
             app:layout_constraintTop_toBottomOf="@id/view14">
 
             <TextView
-                android:id="@+id/textView175"
+                android:id="@+id/vlasnicka_struktura_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -53,7 +351,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView202"
+                android:id="@+id/kapital_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -66,7 +364,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView203"
+                android:id="@+id/uprava_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -79,7 +377,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView204"
+                android:id="@+id/stanje_racuna_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -92,7 +390,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView205"
+                android:id="@+id/finansije_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -105,7 +403,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView206"
+                android:id="@+id/opis_djelatnosti_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -118,7 +416,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView207"
+                android:id="@+id/drugi_kontakti_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -131,7 +429,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView208"
+                android:id="@+id/robne_marke_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -144,7 +442,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView209"
+                android:id="@+id/robeiusluge_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -157,7 +455,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView210"
+                android:id="@+id/tenderi_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -170,7 +468,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView211"
+                android:id="@+id/ucescenatenderima_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -183,7 +481,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView212"
+                android:id="@+id/isporucioci_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -196,7 +494,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView213"
+                android:id="@+id/stecajnipostupak_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -209,7 +507,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView214"
+                android:id="@+id/likvidaocionipostupak_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -222,7 +520,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView215"
+                android:id="@+id/pobjedenatenderima_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -235,7 +533,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView216"
+                android:id="@+id/plannabavki_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"
@@ -248,7 +546,7 @@
                 app:drawableTint="@color/akta_cyan" />
 
             <TextView
-                android:id="@+id/textView217"
+                android:id="@+id/vezanefirme_dodatno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_white_arrow_right"

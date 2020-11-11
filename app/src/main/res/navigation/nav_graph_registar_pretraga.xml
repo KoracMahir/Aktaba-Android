@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_registar_pretraga"
+    app:startDestination="@id/osnovniPodaciRegistarFragment">
+
+    <fragment
+        android:id="@+id/rezultatiPretrageRegFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.registarPretraga.RezultatiPretrageRegFragment"
+        android:label="fragment_rezultati_pretrage_reg"
+        tools:layout="@layout/fragment_rezultati_pretrage_reg" />
+    <fragment
+        android:id="@+id/osnovniPodaciRegistarFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.rezultati.OsnovniPodaciRegistarFragment"
+        android:label="fragment_osnovni_podaci_registar"
+        tools:layout="@layout/fragment_osnovni_podaci_registar" >
+        <action
+            android:id="@+id/action_osnovniPodaciRegistarFragment_to_dodatniPodaciFragment"
+            app:destination="@id/dodatniPodaciFragment" />
+        <action
+            android:id="@+id/action_osnovniPodaciRegistarFragment_to_pressClippingFragment"
+            app:destination="@id/pressClippingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dodatniPodaciFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.rezultati.DodatniPodaciFragment"
+        android:label="fragment_dodatni_podaci"
+        tools:layout="@layout/fragment_dodatni_podaci" >
+        <action
+            android:id="@+id/action_dodatniPodaciFragment_to_pressClippingFragment"
+            app:destination="@id/pressClippingFragment" />
+        <action
+            android:id="@+id/action_dodatniPodaciFragment_to_osnovniPodaciRegistarFragment"
+            app:destination="@id/osnovniPodaciRegistarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pressClippingFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.rezultati.PressClippingFragment"
+        android:label="fragment_press_clipping"
+        tools:layout="@layout/fragment_press_clipping" >
+        <action
+            android:id="@+id/action_pressClippingFragment_to_osnovniPodaciRegistarFragment"
+            app:destination="@id/osnovniPodaciRegistarFragment" />
+        <action
+            android:id="@+id/action_pressClippingFragment_to_dodatniPodaciFragment"
+            app:destination="@id/dodatniPodaciFragment" />
+    </fragment>
+</navigation>
