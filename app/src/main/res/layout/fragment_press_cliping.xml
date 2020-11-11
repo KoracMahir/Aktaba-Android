@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context=".fragments.main.mojRegistar.PressClipingFragment">
+
+    <fragment
+        android:id="@+id/fragment7"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.FirmaHeaderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/border_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment" />
+
+    <fragment
+        android:id="@+id/fragment5"
+        android:name="com.mezet.actaandroid.fragments.sections.registar.PovezaneRegistarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+
+    <fragment
+        android:id="@+id/fragment8"
+        android:name="com.mezet.actaandroid.fragments.sections.registar.NajaveRegistarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <fragment
+        android:id="@+id/fragment9"
+        android:name="com.mezet.actaandroid.fragments.sections.registar.LicnostiRegistarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <fragment
+        android:id="@+id/fragment10"
+        android:name="com.mezet.actaandroid.fragments.sections.registar.FilantropiRegistarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <fragment
+        android:id="@+id/fragment11"
+        android:name="com.mezet.actaandroid.fragments.sections.registar.PromoFragmentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

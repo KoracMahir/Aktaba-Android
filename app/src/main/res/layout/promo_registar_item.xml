@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+
+    <ImageView
+        android:id="@+id/image_vijesti_6"
+        android:layout_width="152dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="center"
+        android:src="@drawable/image_example"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_top5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/open_sans"
+        android:text="PREDSTAVLJAMO"
+        android:textColor="@color/akta_cyan"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toRightOf="@id/image_vijesti_6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_vijesti_6" />
+
+    <TextView
+        android:id="@+id/big_text5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Miroslav Lajčak predložen za posebnog izaslanika EU-a za zapadni..."
+        android:textColor="@color/text"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_vijesti_6"
+        app:layout_constraintLeft_toRightOf="@id/image_vijesti_6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_top5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

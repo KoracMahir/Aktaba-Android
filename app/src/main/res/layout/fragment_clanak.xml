@@ -11,50 +11,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView59"
-        android:layout_width="0dp"
-        android:layout_height="260dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:src="@drawable/bager"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView59"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/bager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView153"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="Prezentacija HSM traktora za tržište BIH"
-        android:textColor="@color/text"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView59" />
+        <TextView
+            android:id="@+id/textView153"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Prezentacija HSM traktora za tržište BIH"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView59" />
 
-    <TextView
-        android:id="@+id/textView152"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/open_sans"
-        android:text='Prezentacijom u Olovu 19.09.2012 godine predstavljen je HSM - šumski zglobni traktor modificiran i apsolutno kompatibilan za tržište Balkana. Prema riječima direktora firme JasminM doo g-din-a Jasmina Malićbegovića:" HSM je trenutno  jedina mašina koja može zadovoljiti potrebe tržišta BiH, sa svom svojom opremom, kvalitetom i performansama."\n\nCilj prezentacije je bio da upoznamo naše poslovne partnere, kupce s kojima imamo dugogodišnju saradnju da smo u mogućnosti ponuditi najopremljeniji šumski traktor ikada prestavljen BH tržištu.'
-        android:textColor="@color/text"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView153" />
+        <TextView
+            android:id="@+id/textView152"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text='Prezentacijom u Olovu 19.09.2012 godine predstavljen je HSM - šumski zglobni traktor modificiran i apsolutno kompatibilan za tržište Balkana. Prema riječima direktora firme JasminM doo g-din-a Jasmina Malićbegovića:" HSM je trenutno  jedina mašina koja može zadovoljiti potrebe tržišta BiH, sa svom svojom opremom, kvalitetom i performansama."\n\nCilj prezentacije je bio da upoznamo naše poslovne partnere, kupce s kojima imamo dugogodišnju saradnju da smo u mogućnosti ponuditi najopremljeniji šumski traktor ikada prestavljen BH tržištu.'
+            android:textColor="@color/text"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView153" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
