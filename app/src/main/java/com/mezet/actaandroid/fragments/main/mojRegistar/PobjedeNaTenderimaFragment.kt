@@ -15,6 +15,7 @@ class PobjedeNaTenderimaFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val v= inflater.inflate(R.layout.fragment_pobjede_na_tenderima, container, false)
+
         return v
     }
 
