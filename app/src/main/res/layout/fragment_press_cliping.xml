@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="vertical"
-    tools:context=".fragments.main.mojRegistar.PressClipingFragment">
+    tools:context=".fragments.main.mojRegistar.sections.PressClipingFragment">
 
     <fragment
         android:id="@+id/fragment7"
