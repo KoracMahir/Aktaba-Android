@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_vijesti_pretraga"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.mezet.actaandroid.fragments.main.vijesti.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchKategorijeFragment"
+            app:destination="@id/searchKategorijeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_searchKategorijePrivredeFragment"
+            app:destination="@id/searchKategorijePrivredeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchKategorijeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.vijesti.search.SearchKategorijeFragment"
+        android:label="fragment_search_kategorije"
+        tools:layout="@layout/fragment_search_kategorije" />
+    <fragment
+        android:id="@+id/searchKategorijePrivredeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.vijesti.search.SearchKategorijePrivredeFragment"
+        android:label="fragment_search_kategorije_privrede"
+        tools:layout="@layout/fragment_search_kategorije_privrede" />
+</navigation>

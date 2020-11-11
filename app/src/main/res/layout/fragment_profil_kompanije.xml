@@ -9,15 +9,303 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragment6"
-            android:name="com.mezet.actaandroid.mojRegistar.FirmaHeaderFragment"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/header">
+                <ImageView
+                    android:id="@+id/logo_kompanija"
+                    android:layout_width="180dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/logo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.fragment.app.FragmentContainerView>
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/ic_business"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/logo_kompanija"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/short_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="BH TELECOM d.d. Sarajevo"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView46" />
+
+                <TextView
+                    android:id="@+id/long_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Dioničko društvo BH Telecom Sarajevo"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/short_name" />
+
+                <ImageView
+                    android:id="@+id/imageView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/ic_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView46"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/adresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="ul.Franca Lehara br.7"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView47" />
+
+                <TextView
+                    android:id="@+id/zipcodepluscity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="71000 Sarajevo - Centar"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/adresa" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text=""
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/zipcodepluscity" />
+
+                <ImageView
+                    android:id="@+id/imageView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView47"
+                    app:srcCompat="@drawable/ic_phone"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="+387 33 643 636 "
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView48" />
+
+                <TextView
+                    android:id="@+id/phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="+387 33 658 933"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phone1" />
+
+                <ImageView
+                    android:id="@+id/imageView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView48"
+                    app:srcCompat="@drawable/ic_local_printshop_24px"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/fax1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="+387 33 648 808"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView49" />
+
+
+                <ImageView
+                    android:id="@+id/imageView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView49"
+                    app:srcCompat="@drawable/ic_at"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/email_kompanije"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="podrska@bhtelecom.ba"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView50" />
+
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView50"
+                    app:srcCompat="@drawable/ic_globe"
+                    app:tint="@color/akta_cyan" />
+
+                <TextView
+                    android:id="@+id/website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="http://www.bhtelecom.ba"
+                    android:textColor="@color/akta_cyan"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/imageView51" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/social_icons"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="60dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView51">
+
+                        <ImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_fb" />
+
+                        <ImageView
+                            android:id="@+id/imageView53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@id/imageView52"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_tweet" />
+
+                        <ImageView
+                            android:id="@+id/imageView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/imageView53"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_linkedin" />
+
+                        <ImageView
+                            android:id="@+id/imageView55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/imageView54"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_yt" />
+
+                        <ImageView
+                            android:id="@+id/imageView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/imageView55"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_gplus" />
+
+                        <ImageView
+                            android:id="@+id/imageView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/imageView56"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_instagram" />
+
+                        <ImageView
+                            android:id="@+id/imageView58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="30dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/imageView57"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_pine" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
             android:id="@+id/view"
@@ -31,7 +319,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView95" />
+            app:layout_constraintTop_toBottomOf="@id/header" />
 
         <TextView
             android:id="@+id/textView90"
@@ -44,10 +332,10 @@
             android:text="ODGOVORNO LICE"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fragment6" />
+            app:layout_constraintTop_toBottomOf="@id/view" />
 
         <TextView
-            android:id="@+id/textView95"
+            android:id="@+id/menager_full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -70,7 +358,7 @@
             android:text="PRAVNE INFORMACIJE"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view" />
+            app:layout_constraintTop_toBottomOf="@id/menager_full_name" />
 
         <TextView
             android:id="@+id/textView97"
@@ -86,7 +374,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView96" />
 
         <TextView
-            android:id="@+id/textView102"
+            android:id="@+id/oblik_svojine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -110,7 +398,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView97" />
 
         <TextView
-            android:id="@+id/textView103"
+            android:id="@+id/id_broj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -135,7 +423,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView98" />
 
         <TextView
-            android:id="@+id/textView104"
+            android:id="@+id/pdv_broj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -160,7 +448,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView99" />
 
         <TextView
-            android:id="@+id/textView105"
+            android:id="@+id/datum_osnivanja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -185,7 +473,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView100" />
 
         <TextView
-            android:id="@+id/textView106"
+            android:id="@+id/berzanski_index"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -209,10 +497,10 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView106" />
+            app:layout_constraintTop_toBottomOf="@id/berzanski_index" />
 
         <TextView
-            android:id="@+id/textView107"
+            android:id="@+id/prosjecan_br_radnika_text"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -225,17 +513,17 @@
             app:layout_constraintTop_toBottomOf="@id/view3" />
 
         <TextView
-            android:id="@+id/textView108"
+            android:id="@+id/prosjecan_br_radnika"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_bold"
             android:text="3288"
             android:textColor="@color/akte_darkgreen"
             android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView107"
-            app:layout_constraintLeft_toRightOf="@id/textView107"
-            app:layout_constraintStart_toStartOf="@+id/textView106"
-            app:layout_constraintTop_toTopOf="@+id/textView107"
+            app:layout_constraintBottom_toBottomOf="@+id/prosjecan_br_radnika_text"
+            app:layout_constraintLeft_toRightOf="@id/prosjecan_br_radnika_text"
+            app:layout_constraintStart_toStartOf="@+id/berzanski_index"
+            app:layout_constraintTop_toTopOf="@+id/prosjecan_br_radnika_text"
             app:layout_constraintVertical_bias="1.0" />
 
         <View
@@ -250,10 +538,10 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView107" />
+            app:layout_constraintTop_toBottomOf="@id/prosjecan_br_radnika_text" />
 
         <TextView
-            android:id="@+id/textView109"
+            android:id="@+id/ukupan_prihod_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -266,7 +554,7 @@
             app:layout_constraintTop_toBottomOf="@id/view4" />
 
         <TextView
-            android:id="@+id/textView110"
+            android:id="@+id/ukupan_prihod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -276,7 +564,7 @@
             android:textColor="@color/akte_darkgreen"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView109" />
+            app:layout_constraintTop_toBottomOf="@id/ukupan_prihod_text" />
 
         <View
             android:id="@+id/view5"
@@ -290,7 +578,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView110" />
+            app:layout_constraintTop_toBottomOf="@id/ukupan_prihod" />
 
         <TextView
             android:id="@+id/textView111"
@@ -306,7 +594,7 @@
             app:layout_constraintTop_toBottomOf="@id/view5" />
 
         <TextView
-            android:id="@+id/textView112"
+            android:id="@+id/aktivni_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -319,7 +607,7 @@
             app:layout_constraintTop_toBottomOf="@id/textView111" />
 
         <TextView
-            android:id="@+id/textView113"
+            android:id="@+id/aktivni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -327,10 +615,10 @@
             android:text="79"
             android:textColor="@color/akte_darkgreen"
             app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView112" />
+            app:layout_constraintTop_toTopOf="@id/aktivni_text" />
 
         <TextView
-            android:id="@+id/textView115"
+            android:id="@+id/blokirani_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -339,10 +627,10 @@
             android:text="BLOKIRANI"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView112" />
+            app:layout_constraintTop_toBottomOf="@id/aktivni_text" />
 
         <TextView
-            android:id="@+id/textView114"
+            android:id="@+id/blokirani"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -351,10 +639,10 @@
             android:text="0"
             android:textColor="@color/akte_darkgreen"
             app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView115" />
+            app:layout_constraintTop_toTopOf="@id/blokirani_text" />
 
         <TextView
-            android:id="@+id/textView156"
+            android:id="@+id/ugaseni_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -363,10 +651,10 @@
             android:text="UGAŠENO"
             android:textColor="@color/text"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView115" />
+            app:layout_constraintTop_toBottomOf="@id/blokirani_text" />
 
         <TextView
-            android:id="@+id/textView157"
+            android:id="@+id/ugaseni"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
@@ -375,7 +663,7 @@
             android:text="0"
             android:textColor="@color/akte_darkgreen"
             app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView156" />
+            app:layout_constraintTop_toTopOf="@id/ugaseni_text" />
 
         <View
             android:id="@+id/view6"
@@ -389,7 +677,7 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView156" />
+            app:layout_constraintTop_toBottomOf="@id/ugaseni_text" />
 
         <TextView
             android:id="@+id/textView116"
@@ -404,125 +692,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view6" />
 
-        <TextView
-            android:id="@+id/textView117"
-            android:layout_width="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/djelatnosti_recycler"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="60.10"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView116" />
-
-        <TextView
-            android:id="@+id/textView118"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Emitiranje radijskoj programa"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView117" />
-
-        <TextView
-            android:id="@+id/textView119"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Djelatnost žičane telekomunikacije"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView120" />
-
-        <TextView
-            android:id="@+id/textView120"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="61.10"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView117" />
-
-        <TextView
-            android:id="@+id/textView121"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Djelatnost finansijskih holding- društava"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView122" />
-
-        <TextView
-            android:id="@+id/textView122"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="64.20"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView120" />
-
-        <TextView
-            android:id="@+id/textView123"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Djelatnost javnih pošta"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView124" />
-
-        <TextView
-            android:id="@+id/textView124"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="64.110"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView122" />
-
-        <TextView
-            android:id="@+id/textView125"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="64.200"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView124" />
-
-        <TextView
-            android:id="@+id/textView126"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Telekomunikacije"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toTopOf="@id/textView125" />
+            app:layout_constraintTop_toBottomOf="@id/textView116"
+            android:layout_marginTop="2dp"
+            tools:listitem="@layout/djelatnosti_item"/>
 
         <View
             android:id="@+id/view11"
@@ -536,76 +712,17 @@
             android:background="@color/border_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textView126" />
+            app:layout_constraintTop_toBottomOf="@id/djelatnosti_recycler" />
 
-        <TextView
-            android:id="@+id/textView163"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
+
+        <fragment
+            android:id="@+id/nav_host_fragment1"
+            android:name="com.mezet.actaandroid.fragments.main.mojProfil.subsections.PovezanaDrustvaFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/view11"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/open_sans_bold"
-            android:text="POVEZANA DRUŠTVA"
-            android:textColor="@color/text"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view11" />
-
-        <TextView
-            android:id="@+id/textView161"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans"
-            android:text="BH Telecom d.d. Sarajevo - Direkcija Tuzla"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toBottomOf="@id/textView163" />
-
-        <TextView
-            android:id="@+id/textView160"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans"
-            android:text="BH Telecom d.d. Sarajevo - Direkcija Zenica"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toBottomOf="@id/textView161" />
-
-        <TextView
-            android:id="@+id/textView168"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:fontFamily="@font/open_sans"
-            android:text="BH Telecom d.d. Sarajevo - Centar Tešanj"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toBottomOf="@id/textView160" />
-
-        <TextView
-            android:id="@+id/textView159"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
-            android:text="BH TELECOM SARAJEVO, P.J. TELECOM CENTAR OBALA"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toBottomOf="@id/textView168" />
-
-        <TextView
-            android:id="@+id/textView162"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="30dp"
-            android:fontFamily="@font/open_sans"
-            android:text="BH Telecom d.d.Sarajevo - Direkcija Tuzla"
-            android:textColor="@color/akte_darkgreen"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="@id/textView97"
-            app:layout_constraintTop_toBottomOf="@id/textView159" />
+            app:defaultNavHost="true" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,6 +18,7 @@
             android:layout_marginTop="14dp"/>
 
         <Button
+            android:id="@+id/logo_btn_promo"
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:background="@drawable/ic_profile"
@@ -25,6 +26,15 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="14dp"
             android:layout_marginRight="14dp"/>
+        <Button
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_baseline_search_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/logo_btn_promo"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="31dp"
+            android:id="@+id/search_btn_promo"/>
 
         <TextView
             android:layout_width="wrap_content"

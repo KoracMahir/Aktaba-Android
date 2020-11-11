@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_registar"
+    app:startDestination="@id/registarPretragaFragment">
+
+    <fragment
+        android:id="@+id/registarPretragaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.registarPretraga.RegistarPretragaFragment"
+        android:label="fragment_registar_pretraga"
+        tools:layout="@layout/fragment_registar_pretraga" >
+        <action
+            android:id="@+id/action_registarPretragaFragment_to_premiumPretragaFragment"
+            app:destination="@id/premiumPretragaFragment" />
+        <action
+            android:id="@+id/action_registarPretragaFragment_to_plusPretragaFragment"
+            app:destination="@id/plusPretragaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plusPretragaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.registarPretraga.PlusPretragaFragment"
+        android:label="fragment_plus_pretraga"
+        tools:layout="@layout/fragment_plus_pretraga" >
+        <action
+            android:id="@+id/action_plusPretragaFragment_to_registarPretragaFragment"
+            app:destination="@id/registarPretragaFragment" />
+        <action
+            android:id="@+id/action_plusPretragaFragment_to_premiumPretragaFragment"
+            app:destination="@id/premiumPretragaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/premiumPretragaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.registarPretraga.PremiumPretragaFragment"
+        android:label="fragment_premium_pretraga"
+        tools:layout="@layout/fragment_premium_pretraga" >
+        <action
+            android:id="@+id/action_premiumPretragaFragment_to_registarPretragaFragment"
+            app:destination="@id/registarPretragaFragment" />
+        <action
+            android:id="@+id/action_premiumPretragaFragment_to_plusPretragaFragment"
+            app:destination="@id/plusPretragaFragment" />
+    </fragment>
+</navigation>

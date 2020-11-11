@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_promo_pretraga"
+    app:startDestination="@id/searchPromoFragment">
+
+    <fragment
+        android:id="@+id/searchPromoFragment"
+        android:name="com.mezet.actaandroid.fragments.main.promo.pretraga.SearchPromoFragment"
+        android:label="fragment_search_promo"
+        tools:layout="@layout/fragment_search_promo" >
+        <action
+            android:id="@+id/action_searchPromoFragment_to_promoKategorijaOglasaFragment"
+            app:destination="@id/promoKategorijaOglasaFragment" />
+        <action
+            android:id="@+id/action_searchPromoFragment_to_searchKategorijePrivredePromoFragment"
+            app:destination="@id/searchKategorijePrivredePromoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promoKategorijaOglasaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.promo.pretraga.PromoKategorijaOglasaFragment"
+        android:label="fragment_promo_kategorija_oglasa"
+        tools:layout="@layout/fragment_promo_kategorija_oglasa" />
+    <fragment
+        android:id="@+id/searchKategorijePrivredePromoFragment"
+        android:name="com.mezet.actaandroid.fragments.main.promo.pretraga.SearchKategorijePrivredePromoFragment"
+        android:label="fragment_search_kategorije_privrede_promo"
+        tools:layout="@layout/fragment_search_kategorije_privrede_promo" />
+</navigation>

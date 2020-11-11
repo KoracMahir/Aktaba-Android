@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.main.RegistarPretragaMain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:id="@+id/topbar"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:background="@color/akta_cyan">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/osnovnipodaci_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="OSNOVNI PODACI"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/osnovnipodaci_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/osnovnipodaci_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/osnovnipodaci_btn"
+                        app:layout_constraintRight_toRightOf="@id/osnovnipodaci_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/dodatnipodaci_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="DODATNI PODACI"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/dodatnipodaci_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/dodatnipodaci_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/dodatnipodaci_btn"
+                        app:layout_constraintRight_toRightOf="@id/dodatnipodaci_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/pressclipping_btn"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:text="PRESS CLIPPING"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/open_sans"
+                        android:background="#00FFFFFF"
+                        android:textSize="15dp"/>
+                    <ImageView
+                        android:id="@+id/pressclipping_choosed"
+                        android:layout_width="0dp"
+                        android:layout_height="3dp"
+                        app:layout_constraintTop_toBottomOf="@id/pressclipping_btn"
+                        app:srcCompat="@drawable/ic_line_big"
+                        app:layout_constraintLeft_toLeftOf="@id/pressclipping_btn"
+                        app:layout_constraintRight_toRightOf="@id/pressclipping_btn"
+                        android:scaleType="centerCrop"
+                        android:layout_marginTop="2dp"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="@id/topbar"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="2dp"
+            android:layout_marginBottom="6dp"
+            app:srcCompat="@drawable/ic_line_white"
+            tools:ignore="NotSibling" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/homefragment1"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph_registar_pretraga"/>
+
+</LinearLayout>
