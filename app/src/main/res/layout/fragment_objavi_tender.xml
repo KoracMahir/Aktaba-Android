@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.tenderi.ObjaviTenderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName34"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Naziv firme"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName36"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Kontakt e-mail"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName41"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Naslov Tendera"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName51"
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:gravity="left"
+            android:hint="Vaša objava"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/text_tendera25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="unutar teksta možete unijeti slike idealne veličine 852x415, maksimalne težine do 1MB"
+            android:textColor="@color/akta_gold"
+            android:textSize="@dimen/text_13sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_tendera16" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName52"
+            android:layout_width="match_parent"
+            android:layout_height="170sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:gravity="left"
+            android:hint="Napomena"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <TextView
+            android:id="@+id/text_tendera26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Napomena može sadržavati dodatne informacije vezane za vašu objavu: rubrika, datum i vrijeme objave, da li želite da vaša objava bude objavljena u newsletteru Akta - Tenderi ili Akta - Dodjele ugovora (ukoliko treba da se objava ponavlja, naglasiti da se ponavlja 7 dana (dva puta u biltenu) ili 30 dana (osam puta u biltenu)), dodatne slike za galeriju, dokumente"
+            android:textColor="@color/akta_gold"
+            android:textSize="@dimen/text_13sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_tendera16" />
+
+        <Button
+            android:id="@+id/bratbrat2"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/akta_gold"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="OBJAVI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+
+    </LinearLayout>
+</ScrollView>

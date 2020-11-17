@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_vijesti_"
+        android:layout_width="152dp"
+        android:layout_height="74dp"
+        android:scaleType="center"
+        android:src="@drawable/image_example"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/big_text6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Evo koje izmjene donosi Zakon o porezu na dobit FBiH"
+        android:textColor="@color/text"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_vijesti_"
+        app:layout_constraintLeft_toRightOf="@id/image_vijesti_"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_vijesti_" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/open_sans"
+        android:text="12.12.2019"
+        android:textColor="@color/o_akta"
+        app:layout_constraintStart_toEndOf="@+id/image_vijesti_"
+        app:layout_constraintTop_toBottomOf="@+id/big_text6" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/akta_gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView60" />
+</androidx.constraintlayout.widget.ConstraintLayout>
