@@ -31,73 +31,25 @@
             android:layout_marginLeft="28dp"
             android:layout_marginTop="5dp"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/preporuceno_bar"
+        <HorizontalScrollView
+            android:layout_marginLeft="31dp"
             android:layout_marginTop="6dp"
-            android:layout_width="wrap_content"
-            android:layout_height="136dp"
+            android:id="@+id/preporuceno_bar"
             app:layout_constraintTop_toBottomOf="@id/preporuceno"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="30dp">
-
-            <ImageView
-                android:layout_width="182dp"
-                android:layout_height="136dp"
-                android:src="@drawable/image_example"
-                android:scaleType="centerCrop"
-                app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintTop_toTopOf="@id/preporuceno_bar"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:id="@+id/image1"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toTopOf="@id/image1"
-                app:layout_constraintBottom_toBottomOf="@id/image1"
-                app:layout_constraintLeft_toLeftOf="@id/image1"
-                app:layout_constraintRight_toRightOf="@id/image1"
-                android:background="@drawable/ic_gray_transparent"/>
-            <TextView
+                android:id="@+id/najnovije_promo_top"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="text1text1text1text1text1"
-                android:textColor="@color/white"
-                android:fontFamily="@font/open_sans"
-                app:layout_constraintBottom_toBottomOf="@id/image1"
-                app:layout_constraintLeft_toLeftOf="@id/image1"
-                app:layout_constraintRight_toRightOf="@id/image1"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="8dp"/>
-
-            <ImageView
-                android:layout_width="182dp"
-                android:layout_height="136dp"
-                android:src="@drawable/image_example"
-                android:scaleType="centerCrop"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toRightOf="@id/image1"
-                android:layout_marginLeft="21dp"
-                android:id="@+id/image2"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_constraintTop_toTopOf="@id/image2"
-                app:layout_constraintBottom_toBottomOf="@id/image2"
-                app:layout_constraintLeft_toLeftOf="@id/image2"
-                app:layout_constraintRight_toRightOf="@id/image2"
-                android:background="@drawable/ic_gray_transparent"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="text1text1text1text1text1"
-                android:textColor="@color/white"
-                android:fontFamily="@font/open_sans"
-                app:layout_constraintBottom_toBottomOf="@id/image2"
-                app:layout_constraintLeft_toLeftOf="@id/image2"
-                app:layout_constraintRight_toRightOf="@id/image2"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="8dp"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/najnovije_item"/>
+        </HorizontalScrollView>
 
         <ImageView
             android:layout_width="match_parent"
@@ -132,7 +84,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="26dp"
             android:layout_marginRight="30dp"
             android:fontFamily="@font/open_sans"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."
@@ -140,7 +91,7 @@
             android:textSize="12dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/title" />
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
         <TextView
             android:id="@+id/newsletter"
@@ -220,6 +171,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp">
             <Button
+                android:id="@+id/najnovije_promo"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -227,6 +179,7 @@
                 android:textColor="@color/white"
                 android:text="najnovije"/>
             <Button
+                android:id="@+id/najcitanije_promo"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
@@ -235,7 +188,7 @@
                 android:text="NAJČITANIJE"/>
         </LinearLayout>
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_vijesti"
+            android:id="@+id/recycler_promo_top5"
             app:layout_constraintTop_toBottomOf="@id/najnovijeornajcitanije"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -258,7 +211,7 @@
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/recycler_vijesti" />
+            app:layout_constraintTop_toBottomOf="@id/recycler_promo_top5" />
         <LinearLayout
             android:id="@+id/igandfb"
             android:layout_width="match_parent"

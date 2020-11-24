@@ -85,6 +85,29 @@
         android:text="PRIJAVA"
         android:textColor="@color/white"/>
 
+    <TextView
+        android:id="@+id/registruj_se"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/prijava_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Registruj se ili testiraj besplatno"
+        android:textColor="@color/registar"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/prijava_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Novi Korisnik?"
+        android:textColor="@color/text"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

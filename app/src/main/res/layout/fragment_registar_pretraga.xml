@@ -79,12 +79,32 @@
             android:fontFamily="@font/open_sans"
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
-            android:text="Naziv firme"
+            android:hint="Naziv firme"
             android:textColor="@color/siva_text"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView165" />
+        <View
+            android:id="@+id/onclose"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/editTextTextPersonName12"
+            app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName12"
+            app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName12"
+            app:layout_constraintRight_toRightOf="@id/editTextTextPersonName12"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_comp_name_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:listitem="@layout/registar_autocomplete_item"
+            tools:itemCount="2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12"
+            android:background="@drawable/okvir_registar"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName13"
@@ -100,12 +120,32 @@
             android:fontFamily="@font/open_sans"
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
-            android:text="ID/PDV broj"
+            android:hint="ID/PDV broj"
             android:textColor="@color/siva_text"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName12" />
+            app:layout_constraintTop_toBottomOf="@id/recycler_comp_name_ac" />
+        <View
+            android:id="@+id/onclose2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/editTextTextPersonName13"
+            app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName13"
+            app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName13"
+            app:layout_constraintRight_toRightOf="@id/editTextTextPersonName13"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_id_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:listitem="@layout/registar_autocomplete_item"
+            tools:itemCount="2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13"
+            android:background="@drawable/okvir_registar"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName14"
@@ -121,12 +161,53 @@
             android:fontFamily="@font/open_sans"
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
-            android:text="Odgovorno lice/Direktor"
+            android:hint="Odgovorno lice/Direktor"
             android:textColor="@color/siva_text"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName13" />
+            app:layout_constraintTop_toBottomOf="@id/recycler_id_ac" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName1a4"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_cyan"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="14sp"
+            android:hint="Klasifikacija djelatnosti"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName14" />
+        <View
+            android:id="@+id/onclose4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/editTextTextPersonName1a4"
+            app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName1a4"
+            app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName1a4"
+            app:layout_constraintRight_toRightOf="@id/editTextTextPersonName1a4"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_djel_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:listitem="@layout/registar_autocomplete_item"
+            tools:itemCount="2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1a4"
+            android:background="@drawable/okvir_registar"/>
 
         <EditText
             android:id="@+id/editTextTextPersonName15"
@@ -142,12 +223,12 @@
             android:fontFamily="@font/open_sans"
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
-            android:text="Pojmovi za pretragu"
+            android:hint="Pojmovi za pretragu"
             android:textColor="@color/siva_text"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName14" />
+            app:layout_constraintTop_toBottomOf="@id/recycler_djel_ac" />
 
         <EditText
             android:id="@+id/editTextTextPersonName16"
@@ -163,12 +244,33 @@
             android:fontFamily="@font/open_sans"
             android:inputType="textPersonName"
             android:paddingLeft="14sp"
-            android:text="Država"
+            android:hint="Država"
             android:textColor="@color/siva_text"
             android:textSize="@dimen/text_12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName15" />
+        <View
+            android:id="@+id/onclose6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/editTextTextPersonName16"
+            app:layout_constraintBottom_toBottomOf="@id/editTextTextPersonName16"
+            app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName16"
+            app:layout_constraintRight_toRightOf="@id/editTextTextPersonName16"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_country_ac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:listitem="@layout/registar_autocomplete_item"
+            tools:itemCount="2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName16"
+            android:background="@drawable/okvir_registar"/>
+
 
         <Button
             android:id="@+id/trazi_pretraga"
@@ -186,7 +288,7 @@
             android:textSize="@dimen/sesnaest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName16" />
+            app:layout_constraintTop_toBottomOf="@id/recycler_country_ac" />
 
         <Button
             android:id="@+id/button28"

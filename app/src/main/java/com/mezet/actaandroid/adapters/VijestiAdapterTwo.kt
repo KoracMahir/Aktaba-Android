@@ -1,6 +1,7 @@
 package com.mezet.actaandroid.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mezet.actaandroid.R
+import com.mezet.actaandroid.activities.JedinstvenaVijestActivity
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 
 
@@ -18,6 +20,9 @@ class VijestiAdapterTwo(val mostRecentNews: MostRecentNews?,val context : Contex
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.vijesti_item,parent,false)
+//        v.setOnClickListener(View.OnClickListener {
+//
+//        })
         return ViewHolder(v)
     }
 
@@ -41,6 +46,20 @@ class VijestiAdapterTwo(val mostRecentNews: MostRecentNews?,val context : Contex
             .into(holder.image_vijesti)
         holder.text_vijesti.text = mostRecentNews?.get(position)?.news_name
         Log.d("position",position.toString())
+
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val intent = Intent (context, JedinstvenaVijestActivity::class.java)
+            intent.putExtra("article_id", mostRecentNews?.get(position)?.news_id)
+            context.startActivity(intent)
+            Log.d("article_id","saljem: "+mostRecentNews?.get(position)?.news_id)
+        })
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val intent = Intent (context, JedinstvenaVijestActivity::class.java)
+            intent.putExtra("article_id", mostRecentNews?.get(position)?.news_id)
+            context.startActivity(intent)
+            Log.d("article_id","saljem: "+mostRecentNews?.get(position)?.news_id)
+        })
+
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -49,6 +68,8 @@ class VijestiAdapterTwo(val mostRecentNews: MostRecentNews?,val context : Contex
 
         val image_vijesti = itemView.findViewById(R.id.image_vijesti_2) as ImageView
         val text_vijesti = itemView.findViewById(R.id.big_text) as TextView
+
+
     }
 
 }

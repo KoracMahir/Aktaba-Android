@@ -31,6 +31,18 @@
         <action
             android:id="@+id/action_vlasnickaStrukturaFragment_to_stanjeRacunaFragment"
             app:destination="@id/stanjeRacunaFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_drugiKontaktiFragment"
+            app:destination="@id/drugiKontaktiFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_objavljeniTenderiFragment"
+            app:destination="@id/objavljeniTenderiFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_ucesceNaTenderimaFragment"
+            app:destination="@id/ucesceNaTenderimaFragment" />
+        <action
+            android:id="@+id/action_vlasnickaStrukturaFragment_to_pobjedeNaTenderimaFragment"
+            app:destination="@id/pobjedeNaTenderimaFragment" />
     </fragment>
     <fragment
         android:id="@+id/kapitalFirmeFragment"
@@ -82,4 +94,18 @@
         android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.StanjeRacunaFragment"
         android:label="fragment_stanje_racuna"
         tools:layout="@layout/fragment_stanje_racuna" />
+    <fragment
+        android:id="@+id/drugiKontaktiFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.DrugiKontaktiFragment"
+        android:label="DrugiKontaktiFragment" />
+    <fragment
+        android:id="@+id/ucesceNaTenderimaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.UcesceNaTenderimaFragment"
+        android:label="fragment_ucesce_na_tenderima"
+        tools:layout="@layout/fragment_ucesce_na_tenderima" />
+    <fragment
+        android:id="@+id/pobjedeNaTenderimaFragment"
+        android:name="com.mezet.actaandroid.fragments.main.mojRegistar.sections.PobjedeNaTenderimaFragment"
+        android:label="fragment_pobjede_na_tenderima"
+        tools:layout="@layout/fragment_pobjede_na_tenderima" />
 </navigation>

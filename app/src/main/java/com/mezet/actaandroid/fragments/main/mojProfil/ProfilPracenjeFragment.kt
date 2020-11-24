@@ -177,11 +177,13 @@ class ProfilPracenjeFragment : Fragment(),CompanyAutoCompleteView,KompanijeKojeP
         recyclerView.layoutManager= LinearLayoutManager(context,
             LinearLayoutManager.VERTICAL,false)
         recyclerView.adapter = adapter
-        val close_name = view?.findViewById(R.id.close_name) as View
-        close_name.visibility=View.VISIBLE
-        close_name.setOnClickListener(View.OnClickListener {
-            val edittext = view?.findViewById(R.id.editTextTextPersonName3) as EditText
-            edittext.setText(""+ adapter?.onPosition()?.let { it1 -> autocompletePayload?.get(it1)?.value })
+        val close = view?.findViewById<View>(R.id.onclose)
+        close?.visibility=View.VISIBLE
+
+        close?.setOnClickListener(View.OnClickListener {
+            val edittext1 = view?.findViewById(R.id.editTextTextPersonName3) as EditText
+            edittext1.setText(""+ adapter?.onPosition()?.let { it1 -> autocompletePayload?.get(it1)?.value })
+            close.visibility=View.GONE
             recyclerView.visibility=View.GONE
             val sharedPref: SharedPreferences?=activity?.getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE)
             val token =sharedPref?.getString("token",null)

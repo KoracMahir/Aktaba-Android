@@ -14,7 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.pretraga.RegistarCompanyActivity"></activity>
+        <activity android:name=".activities.RegistarRezultatiActivity"></activity>
+        <activity android:name=".activities.TestirajBesplatnoActivity" />
+        <activity android:name=".activities.KonvertorValutaActivity" />
+        <activity android:name=".activities.KreditniKalkulatroActivity" />
+        <activity
+            android:name=".activities.KursnaListaActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.BerzaActivity" />
+        <activity android:name=".activities.JedinstvenaVijestActivity" />
+        <activity android:name=".activities.pretraga.RegistarCompanyActivity" />
         <activity android:name=".activities.pretraga.PretragaRegistarActivity" />
         <activity android:name=".activities.pretraga.PretragaPromoActivity" />
         <activity android:name=".activities.pretraga.PretragaVijestiActivity" />
@@ -23,10 +33,6 @@
         <activity android:name=".activities.TenderiActivity" />
         <activity android:name=".activities.RegistarActivity" />
         <activity android:name=".activities.PromoActivity" />
-        <activity
-            android:name=".activities.HomeActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

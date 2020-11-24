@@ -58,6 +58,7 @@ class DodatniPodaciFragment : Fragment(), CompanyByIdView {
         })
 
 
+
         val sharedPref: SharedPreferences?=activity?.getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE)
         val token =sharedPref?.getString("token",null)
         val companyId = 6058
