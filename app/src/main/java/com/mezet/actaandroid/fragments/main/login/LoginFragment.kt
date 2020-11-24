@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.mezet.actaandroid.R
 import com.mezet.actaandroid.activities.MainActivity
+import com.mezet.actaandroid.activities.TestirajBesplatnoActivity
 import com.mezet.actaandroid.presenters.LoginPresenter
 import com.mezet.actaandroid.views.LoginView
 
@@ -30,6 +31,7 @@ class LoginFragment : Fragment(),LoginView {
         val v = inflater.inflate(R.layout.fragment_login, container, false)
 
         val zaboravio_sifru = v.findViewById(R.id.zaboravili_ste_sifru) as TextView
+        val registruj_se = v.findViewById(R.id.registruj_se) as TextView
         val back_btn = v.findViewById(R.id.back_btn_login) as Button
         val prijava_btn = v.findViewById(R.id.prijava_btn) as Button
 
@@ -37,6 +39,10 @@ class LoginFragment : Fragment(),LoginView {
         val password = v.findViewById(R.id.password_login) as EditText
         zaboravio_sifru.setOnClickListener(View.OnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_forgerPasswordFragment)
+        })
+        registruj_se.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, TestirajBesplatnoActivity::class.java)
+            this.startActivity(intent)
         })
 
         val open=activity?.intent?.getStringExtra("open_from")

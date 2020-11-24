@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -89,6 +89,7 @@
             app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName16" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_objavljni_tenderi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -97,7 +98,7 @@
             android:layout_marginEnd="30dp"
             android:layout_marginRight="30dp"
             tools:itemCount="20"
-            tools:listitem="@layout/prethodna_uprava_item" />
+            tools:listitem="@layout/objavljeni_tenderi_item" />
     </LinearLayout>
 
-</ScrollView>
+</androidx.core.widget.NestedScrollView>

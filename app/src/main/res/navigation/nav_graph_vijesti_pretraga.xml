@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_searchFragment_to_searchKategorijePrivredeFragment"
             app:destination="@id/searchKategorijePrivredeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_vijestiRezultatiFragment"
+            app:destination="@id/vijestiRezultatiFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchKategorijeFragment"
@@ -27,4 +30,17 @@
         android:name="com.mezet.actaandroid.fragments.main.vijesti.search.SearchKategorijePrivredeFragment"
         android:label="fragment_search_kategorije_privrede"
         tools:layout="@layout/fragment_search_kategorije_privrede" />
+    <fragment
+        android:id="@+id/vijestiRezultatiFragment"
+        android:name="com.mezet.actaandroid.fragments.main.vijesti.search.VijestiRezultatiFragment"
+        android:label="fragment_vijesti_rezultati"
+        tools:layout="@layout/fragment_vijesti_rezultati" >
+        <argument
+            android:name="search_text"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_vijestiRezultatiFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
 </navigation>

@@ -9,5 +9,18 @@
         android:id="@+id/promoFragment"
         android:name="com.mezet.actaandroid.fragments.main.promo.PromoFragment"
         android:label="fragment_promo"
-        tools:layout="@layout/fragment_promo" />
+        tools:layout="@layout/fragment_promo" >
+        <action
+            android:id="@+id/action_promoFragment_to_promoKategorijeFragment"
+            app:destination="@id/promoKategorijeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promoKategorijeFragment"
+        android:name="com.mezet.actaandroid.fragments.main.promo.PromoKategorijeFragment"
+        android:label="fragment_promo_kategorije"
+        tools:layout="@layout/fragment_promo_kategorije" >
+        <action
+            android:id="@+id/action_promoKategorijeFragment_to_promoFragment"
+            app:destination="@id/promoFragment" />
+    </fragment>
 </navigation>

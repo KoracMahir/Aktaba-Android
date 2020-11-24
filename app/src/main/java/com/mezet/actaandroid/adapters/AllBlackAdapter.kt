@@ -2,6 +2,7 @@ package com.mezet.actaandroid.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mezet.actaandroid.R
+import com.mezet.actaandroid.activities.JedinstvenaVijestActivity
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import java.util.*
 
@@ -47,6 +49,13 @@ class AllBlackAdapter(val mostRecentNews: MostRecentNews?, val context : Context
         Log.d("position", position.toString())
         val date = mostRecentNews?.get(position)?.news_date
         holder.date_text.text = date?.substring(8,10) +"."+ date?.substring(5,7) +"."+ date?.substring(0,4)
+
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val intent = Intent (context, JedinstvenaVijestActivity::class.java)
+            intent.putExtra("article_id", mostRecentNews?.get(position)?.news_id)
+            context.startActivity(intent)
+            Log.d("article_id","saljem: "+mostRecentNews?.get(position)?.news_id)
+        })
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

@@ -1,9 +1,9 @@
 package com.mezet.actaandroid.fragments.main.vijesti
 
 import android.content.Context.MODE_PRIVATE
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -19,6 +19,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.mezet.actaandroid.R
+import com.mezet.actaandroid.activities.*
+import com.mezet.actaandroid.adapters.BerzaAdapter
 import com.mezet.actaandroid.adapters.VijestiAdapterOne
 import com.mezet.actaandroid.models.mostrecentnews.MostRecentNews
 import com.mezet.actaandroid.presenters.MostRecentNewsPresenter
@@ -92,6 +94,34 @@ class HomeFragment : Fragment(),MostRecentNewsView {
         kolumna_choosed.visibility=View.GONE
         analiza_choosed.visibility=View.GONE
 
+        val home_drawer = activity?.findViewById(R.id.home_vijesti) as TextView
+        val kursna_lista = activity?.findViewById(R.id.kursnalista_vijesti) as TextView
+        val berza = activity?.findViewById(R.id.berza_vijesti) as TextView
+        val konvertor = activity?.findViewById(R.id.konvertorvaluta_vijesti) as TextView
+        val kalkulator = activity?.findViewById(R.id.kreditnikalkulator_vijesti) as TextView
+
+        kursna_lista.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, MainActivity::class.java)
+            this.startActivity(intent)
+        })
+
+        kursna_lista.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, KursnaListaActivity::class.java)
+            this.startActivity(intent)
+        })
+
+        berza.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, BerzaActivity::class.java)
+            this.startActivity(intent)
+        })
+        konvertor.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, KonvertorValutaActivity::class.java)
+            this.startActivity(intent)
+        })
+        kalkulator.setOnClickListener(View.OnClickListener {
+            val intent = Intent (activity, KreditniKalkulatroActivity::class.java)
+            this.startActivity(intent)
+        })
 
 
         vijesit_drawer.setOnClickListener(View.OnClickListener {

@@ -104,6 +104,46 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView72"
             android:drawableRight="@drawable/ic_arrowdown" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:id="@+id/sve"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:text="Sve zemlje"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/promo"/>
+            <TextView
+                android:id="@+id/bih"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:text="BiH"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/promo"/>
+            <TextView
+                android:id="@+id/ostale"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:text="Ostale"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/promo"/>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/editTextTextPersonName7"
@@ -125,7 +165,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName6" />
+            app:layout_constraintTop_toBottomOf="@id/linear" />
 
         <TextView
             android:id="@+id/textView73"

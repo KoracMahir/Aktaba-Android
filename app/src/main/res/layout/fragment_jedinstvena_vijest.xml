@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.main.vijesti.JedinstvenaVijestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/jedinstvena_vijesti_image"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:src="@drawable/image_example"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp"
+            android:elevation="3dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@color/akta_blue"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gray_line"
+            app:layout_constraintTop_toBottomOf="@id/jedinstvena_vijest_title"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@id/line2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:fontFamily="@font/open_sans"
+            android:text="27.11.2019. 08:12 Izvor: Akta.ba"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            android:textSize="11dp"
+            android:id="@+id/datum"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/jedinstvena_vijesti_image"
+            android:text="Section 1.10.33 of de Finibus Bonorum et Malorum"
+            android:textSize="20dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textColor="@color/text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/jedinstvena_vijest_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. "
+            app:layout_constraintTop_toBottomOf="@id/datum"
+            android:id="@+id/jedinstvena_vijest_description"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text"
+            android:fontFamily="@font/open_sans"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gray_line"
+            app:layout_constraintTop_toBottomOf="@id/jedinstvena_vijest_description"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@id/line1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAGOVI"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textColor="@color/text"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/text1"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/text1"
+            app:layout_constraintLeft_toRightOf="@id/text1"
+            app:layout_constraintTop_toTopOf="@id/text1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/najnovije_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/tagovi_item" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="0 KOMENTARA"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/text"
+            android:id="@+id/text2"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/okvir_siva"
+            android:hint="Dodaj komentar"
+            android:gravity="top"
+            android:textSize="12dp"
+            android:fontFamily="@font/open_sans"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:id="@+id/editbox_komentar"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@color/text"
+            android:text="Komentari odražavaju stavove njihovih autora, a ne nužno i stavove ovog portala "
+            app:layout_constraintTop_toBottomOf="@id/editbox_komentar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:id="@+id/text3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POVEZANE FIRME"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textColor="@color/text"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/text4"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_povezane_firme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/povezane_firme_item"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POVEZANE VIJESTI"
+            app:layout_constraintTop_toBottomOf="@id/recycler_povezane_firme"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textColor="@color/text"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/text5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_povezane_vijesti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:itemCount="2"
+            tools:listitem="@layout/povezane_vijesti_item"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
