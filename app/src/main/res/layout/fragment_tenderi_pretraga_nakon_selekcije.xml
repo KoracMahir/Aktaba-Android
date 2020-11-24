@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.tenderi.TenderiPretragaNakonSelekcijeFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName53"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Naziv firme"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName54"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Sve zemlje"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName56"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Svi tipovi"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName57"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Svi tenderi"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName59"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="6"
+                android:layout_marginRight="6"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum unosa od"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName60"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="6"
+                android:layout_marginLeft="6"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum unosa do"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName58"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Tenderi od novih ka starijim"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <Button
+            android:id="@+id/bratbrat3"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/akta_gold"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="TRAŽI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12sp" />
+    </LinearLayout>
+</ScrollView>

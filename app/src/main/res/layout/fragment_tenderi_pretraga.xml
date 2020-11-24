@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.tenderi.TenderiPretragaFragment" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bratbrat"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/akta_gold"
+            android:drawableEnd="@drawable/ic_white_arrow_right"
+            android:drawableRight="@drawable/ic_white_arrow_right"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="KATEGORIJE TENDERA"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="15dp"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Naziv"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName37"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Broj tendera"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName38"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/akta_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Naziv firme/ID broj"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="15sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName39"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:drawableTint="@color/akta_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="22.5dp"
+            android:text="Svi "
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName55"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum objave od"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName61"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum objave do"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName45"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum važenja od"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName40"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="Datum važenja do"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName42"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/akta_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="CPV/JRJN"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="15sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName43"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:drawableTint="@color/akta_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="22.5dp"
+            android:text="BiH"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName44"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/akta_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Teritorija"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="15sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Vrijednost"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName46"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textinput_style_gold"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:hint="0KM - 0KM"
+                android:inputType="textPersonName"
+                android:paddingLeft="20sp"
+                android:textColor="@color/siva_text"
+                android:textSize="@dimen/text_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView20"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:indeterminate="false"
+            android:progressBackgroundTint="@color/akta_gold"
+            android:thumbTint="@color/akta_gold" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName47"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Tip"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName48"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Vrsta ugovora"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName49"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:hint="Vrsta obavještenja"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:textColor="@color/siva_text"
+            android:textSize="@dimen/text_12sp" />
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/akta_gold"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PRETRAŽI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/akta_grey"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="PONIŠTI PRETRAGU"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sesnaest" />
+
+        <Button
+            android:id="@+id/editTextTextPersonName50"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:drawableTint="@color/akta_gold"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/open_sans_bold"
+            android:inputType="textPersonName"
+            android:paddingLeft="20sp"
+            android:paddingRight="22.5dp"
+            android:text="BRZA PRETRAGA"
+            android:textColor="@color/akta_gold"
+            android:textSize="@dimen/text_12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/textinput_style_gold"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/button22"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Nabavke"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button27"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@color/akta_gold"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Poništenja"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button35"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Izmjene"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button42"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="EU i međunarodni tenderi"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button43"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Prodaja potraživanja"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button44"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Licitacije/nekretnine"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button45"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Javni pozivi, konkursi, oglasi"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button46"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Privatizacije, berze"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button47"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Skupštine"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button48"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Regulacioni planovi"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button49"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Stečaj: prodaja imovine - kompanije u stečaju"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button50"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Odluke o pokretanju postupka"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/button51"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:text="Plan nabavki"
+                android:textColor="@color/akta_gold"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
